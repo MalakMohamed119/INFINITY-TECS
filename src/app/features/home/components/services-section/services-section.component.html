@@ -1,0 +1,80 @@
+<section class="services-section">
+  <div class="container">
+    <app-section-title
+      badge="Our solutions"
+      title="Italian machines. Local support that stays."
+      subtitle="Commercial coffee and vending equipment, selected for your space and backed by installation, maintenance and after-sales care."
+      [centered]="true"
+    ></app-section-title>
+
+    <div class="services-grid">
+      <!-- Pillar 1: Coffee & Espresso Vending -->
+      <div class="service-card vending-card" appScrollReveal revealDirection="left">
+        <div class="card-bg"></div>
+        <div class="service-visual coffee-visual">
+          <img src="assets/images/machines/coffee/larhea-v-plus-grande.png" alt="laRhea V+ Grande coffee machine" loading="lazy" />
+          <span class="visual-caption">Designed and made in Italy</span>
+        </div>
+        <div class="card-content">
+          <span class="pillar-tag">Coffee systems</span>
+          <h3 class="card-title">Coffee systems for everyday service</h3>
+          <p class="card-desc">
+            Italian bean-to-cup equipment for offices and hospitality, with setup and ongoing service from our local team.
+          </p>
+          <ul class="pillar-list">
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>
+              <span>Consistent espresso and milk drinks</span>
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+              <span>Simple drink selection and preparation</span>
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+              <span>Optional remote monitoring</span>
+            </li>
+          </ul>
+          <a routerLink="/vending-solutions/coffee" class="service-btn">
+            Explore Coffee Machines
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Pillar 2: Snack & Cold Beverage Vending -->
+      <div class="service-card automation-card" appScrollReveal revealDirection="right">
+        <div class="card-bg"></div>
+        <div class="service-visual snack-visual">
+          <img src="assets/images/machines/snacks/luce-xl6-multishop.png" alt="Luce Zero snack and beverage vending machine" loading="lazy" />
+          <span class="visual-caption">A considered fit for shared spaces</span>
+        </div>
+        <div class="card-content">
+          <span class="pillar-tag">Smart vending</span>
+          <h3 class="card-title">Snacks, food and chilled drinks</h3>
+          <p class="card-desc">
+            Flexible vending cabinets for shared spaces, with cooling and dispensing options selected around your products.
+          </p>
+          <ul class="pillar-list">
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3.5" y="2" width="17" height="20" rx="3"/><line x1="5.5" y1="9.5" x2="15" y2="9.5"/></svg>
+              <span>Cooling options for chilled products</span>
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M16 12h.01"/></svg>
+              <span>Cashless payment options</span>
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Delivery systems suited to your products</span>
+            </li>
+          </ul>
+          <a routerLink="/vending-solutions/snacks" class="service-btn">
+            Explore Snack Vendors
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

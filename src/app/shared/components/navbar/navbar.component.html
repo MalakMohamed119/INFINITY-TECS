@@ -1,0 +1,52 @@
+<header class="site-header" [class.scrolled]="isScrolled()">
+  <div class="header-container">
+    <!-- Brand Logo -->
+    <a routerLink="/" class="brand-logo" (click)="closeMobileMenu()">
+      <img class="brand-mark" src="assets/images/brand/infinity-tecs-mark.svg" alt="" aria-hidden="true" />
+      <div class="logo-text">
+        <span class="brand-name">infinity <span class="accent">tecs</span></span>
+        <span class="brand-sub">Italian quality · Local care</span>
+      </div>
+    </a>
+
+    <!-- Desktop Navigation -->
+    <nav class="desktop-nav">
+      <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home</a>
+      <a routerLink="/vending-solutions" routerLinkActive="active">Vending Solutions</a>
+      <a routerLink="/customize-vending" routerLinkActive="active">Customize Vending</a>
+      <a routerLink="/about" routerLinkActive="active">About Us</a>
+      <a routerLink="/contact" routerLinkActive="active">Contact</a>
+    </nav>
+
+    <!-- Header Actions & Operations Portal Link -->
+    <div class="header-actions">
+      <!-- Operations CRM Portal Button -->
+      <a routerLink="/request-quote" class="btn-cta">
+        Request Quote
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+
+      <!-- Mobile Hamburger Button -->
+      <button class="mobile-toggle" (click)="toggleMobileMenu()" aria-label="Toggle navigation">
+        <span class="bar" [class.open]="mobileMenuOpen()"></span>
+        <span class="bar" [class.open]="mobileMenuOpen()"></span>
+        <span class="bar" [class.open]="mobileMenuOpen()"></span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile Drawer Overlay -->
+  <div class="mobile-drawer" [class.show]="mobileMenuOpen()">
+    <nav class="mobile-nav">
+      <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="closeMobileMenu()">Home</a>
+      <a routerLink="/vending-solutions" routerLinkActive="active" (click)="closeMobileMenu()">Vending Solutions</a>
+      <a routerLink="/customize-vending" routerLinkActive="active" (click)="closeMobileMenu()">Customize Vending</a>
+      <a routerLink="/about" routerLinkActive="active" (click)="closeMobileMenu()">About Us</a>
+      <a routerLink="/contact" routerLinkActive="active" (click)="closeMobileMenu()">Contact</a>
+      <a routerLink="/request-quote" class="mobile-cta" (click)="closeMobileMenu()">
+        <span>Request a Quote</span>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </nav>
+  </div>
+</header>

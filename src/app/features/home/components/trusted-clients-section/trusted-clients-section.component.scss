@@ -1,0 +1,178 @@
+@use 'mixins' as *;
+
+.clients-section {
+  padding: 6rem 0 5.5rem;
+  background: linear-gradient(180deg, #242a27 0%, #242a27 100%);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  position: relative;
+  overflow: hidden;
+
+  /* Force high contrast text visibility for section title component */
+  ::ng-deep {
+    .section-badge {
+      background: rgba(63, 98, 84, 0.15) !important;
+      color: #6b8577 !important;
+      border: 1px solid rgba(63, 98, 84, 0.4) !important;
+      font-weight: 800 !important;
+      padding: 6px 16px !important;
+    }
+
+    .section-title,
+    h2 {
+      color: #FFFFFF !important;
+      font-size: clamp(2rem, 3.8vw, 2.8rem) !important;
+      font-weight: 800 !important;
+      letter-spacing: -0.5px !important;
+    }
+
+    .section-subtitle,
+    p {
+      color: #9aa49e !important;
+      font-size: 1rem !important;
+      max-width: 680px !important;
+      margin: 0 auto !important;
+    }
+  }
+}
+
+/* Infinite Marquee Layout */
+.marquee-wrapper {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  padding: 3.5rem 0;
+  margin-top: 3rem;
+
+  /* Fade masks on left & right edges */
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 160px;
+    z-index: 2;
+    pointer-events: none;
+  }
+
+  &::before {
+    left: 0;
+    background: linear-gradient(90deg, #242a27 0%, rgba(36, 42, 39, 0) 100%);
+  }
+
+  &::after {
+    right: 0;
+    background: linear-gradient(270deg, #242a27 0%, rgba(36, 42, 39, 0) 100%);
+  }
+}
+
+.marquee-track {
+  display: flex;
+  align-items: center;
+  gap: 4.5rem;
+  width: max-content;
+  animation: continuousMarquee 36s linear infinite;
+
+  &:hover {
+    animation-play-state: paused;
+  }
+}
+
+@keyframes continuousMarquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-33.333%);
+  }
+}
+
+/* Free-Floating Organic Corporate Logos */
+.client-logo-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  cursor: pointer;
+
+  &:hover {
+    .client-logo-img {
+      transform: scale(1.15) translateY(-5px);
+      filter: drop-shadow(0 6px 16px rgba(0, 0, 0, 0.5)) drop-shadow(0 0 20px rgba(63, 98, 84, 0.45));
+    }
+  }
+}
+
+.client-logo-img {
+  height: clamp(64px, 6.5vw, 86px);
+  width: auto;
+  max-width: 260px;
+  object-fit: contain;
+  filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.4)) drop-shadow(0 0 12px rgba(63, 98, 84, 0.18));
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), filter 0.35s ease;
+
+  /* Scale down oversized / stacked logos for visual balance */
+  &[alt*="Crimson"] {
+    height: clamp(48px, 4.8vw, 58px);
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  }
+
+  &[alt*="Marriott"],
+  &[alt*="JW"] {
+    height: clamp(50px, 5vw, 62px);
+  }
+
+  &[alt*="Arqam"] {
+    height: clamp(50px, 5vw, 60px);
+  }
+
+  &[alt*="Dahab"] {
+    height: clamp(58px, 5.8vw, 76px);
+  }
+
+  &[alt*="Dallmayr"] {
+    height: clamp(74px, 7.5vw, 96px);
+  }
+}
+.clients-section{padding:5rem 0 4rem;background:#242a27;border:0}
+.clients-section ::ng-deep .section-badge{background:transparent!important;color:#8c9f94!important;border:0!important;border-bottom:1px solid #515d56!important;border-radius:0!important;box-shadow:none!important}
+.clients-section ::ng-deep .section-title{color:#f8f9f7!important;font-family:Georgia,'Times New Roman',serif!important;font-weight:400!important;letter-spacing:-.035em!important}
+.clients-section ::ng-deep .section-subtitle{color:#c4cdc7!important}
+.marquee-wrapper{padding:2.25rem 0;margin-top:1.5rem}
+.marquee-wrapper::before{background:linear-gradient(90deg,#242a27,transparent)}.marquee-wrapper::after{background:linear-gradient(270deg,#242a27,transparent)}
+.marquee-track{gap:3.5rem}
+.client-logo-item{padding:1rem 1.35rem;background:rgba(255,255,255,.94);border:1px solid rgba(255,255,255,.2);border-radius:2px}
+.client-logo-item:hover .client-logo-img{transform:scale(1.04);filter:none}
+.client-logo-img{filter:none;max-height:66px}
+
+/* Quiet, static partner presentation keeps every mark easy to read. */
+.clients-section{padding:clamp(3.5rem,7vw,5.5rem) 0;background:#f8f9f7;border-top:1px solid #dde4df;border-bottom:1px solid #dde4df}
+.clients-section ::ng-deep .section-badge{background:transparent!important;color:#557766!important;border:0!important;border-bottom:1px solid #c4cdc7!important;border-radius:0!important}
+.clients-section ::ng-deep .section-title{color:#242a27!important;font-family:Georgia,'Times New Roman',serif!important;font-weight:400!important}
+.clients-section ::ng-deep .section-subtitle{color:#707873!important}
+.partner-grid{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:.8rem;margin:2.4rem auto 0;max-width:1120px}
+.partner-logo-tile{height:100px;padding:1rem 1.25rem;display:flex;align-items:center;justify-content:center;background:#fff;border:1px solid #e3e7e4;border-radius:12px;transition:border-color .2s,transform .2s}
+.partner-logo-tile:hover{border-color:#a8b5ac;transform:translateY(-2px)}
+.client-logo-img{display:block;width:100%;height:100%;max-height:58px;max-width:180px;object-fit:contain;filter:none;transition:none}
+@media(max-width:900px){.partner-grid{grid-template-columns:repeat(4,minmax(0,1fr))}}
+@media(max-width:560px){.partner-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:.6rem}.partner-logo-tile{height:82px;padding:.8rem}}
+
+/* Dark frame separates white partner marks from the page background. */
+.clients-section{background:#242a27!important;border-top:1px solid #38453f;border-bottom:1px solid #38453f}
+.clients-section ::ng-deep .section-title{color:#f8f9f7!important}
+.clients-section ::ng-deep .section-subtitle{color:#c4cdc7!important}
+.partner-grid{gap:.85rem}
+.partner-logo-tile{background:#fff;border-color:rgba(255,255,255,.18);border-radius:12px;box-shadow:0 5px 16px rgba(0,0,0,.12)}
+.partner-logo-tile:hover{border-color:#a8b5ac;transform:translateY(-2px)}
+
+/* These supplied marks are white or gold on transparent backgrounds. */
+.partner-logo-tile.dark-logo{background:#303834;border-color:#48534d}
+.partner-logo-tile.dark-logo .client-logo-img{max-height:62px}
+
+/* A darker, consistent tile makes white marks visible; give the blue Arqaam mark a light inset. */
+.partner-logo-tile{background:#38453f!important;border-color:#4b5a51!important}
+.partner-logo-tile.dark-logo{background:#38453f!important;border-color:#4b5a51!important}
+.partner-logo-tile .client-logo-img[src*="arqam-capital"]{box-sizing:content-box;width:calc(100% - 1rem);height:calc(100% - 1rem);padding:.5rem;background:#fff;border-radius:6px}

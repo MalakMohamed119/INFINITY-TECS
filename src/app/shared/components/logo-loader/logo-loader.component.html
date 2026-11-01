@@ -1,0 +1,27 @@
+<div class="logo-loader-container" [class.is-overlay]="isOverlay">
+  <div class="loader-content">
+    <!-- Ambient Subtle Glow -->
+    <div class="brand-glow"></div>
+
+    <!-- Animated Logo & Spinner Ring -->
+    <div class="logo-spinner-wrapper">
+      <div class="spinner-ring"></div>
+      <div class="logo-holder">
+        <img class="brand-mark" src="assets/images/brand/infinity-tecs-mark-loader.svg" alt="" aria-hidden="true" />
+      </div>
+    </div>
+
+    <!-- Clean Vertical Text Stack -->
+    <div class="text-stack">
+      <span class="brand-name">{{ subtext }}</span>
+      <div class="status-indicator">
+        <span class="status-text">{{ text }}</span>
+        <div class="typing-dots">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

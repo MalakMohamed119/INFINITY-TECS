@@ -1,0 +1,72 @@
+/* ==========================================================================
+   Design Tokens & CSS Custom Properties for Infinity Tecs
+   Refreshed palette: graphite, forest green and stone
+   ========================================================================== */
+
+:root {
+  /* Brand palette: graphite, forest green and stone */
+  --color-primary-dark: #242a27;
+  --color-primary-mid: #38453f;
+  --color-primary-light: #52665c;
+  
+  --color-cream-light: #f8f9f7;
+  --color-cream-mid: #eff2ef;
+  --color-cream-dark: #e1e7e2;
+
+  --color-accent-primary: #3f6254;
+  --color-accent-secondary: #557766;
+  --color-accent-muted: #81958a;
+  --color-accent-hover: #304c3f;
+
+  --color-surface-dark: #242a27;
+  --color-surface-card: #FFFFFF;        /* Card Background Light */
+  --color-surface-card-dark: #38453f;
+  
+  --color-text-main: #2e3430;
+  --color-text-light: #f8f9f7;          /* Light Text on Dark BG */
+  --color-text-muted: #707873;
+  --color-text-muted-dark: #c4cdc7;
+
+  --color-border: #dde4df;
+  --color-border-dark: #515d56;
+
+  --color-success: #7b8d83;
+  --color-info: #3f6254;
+
+  /* Typography */
+  --font-family-heading: 'DM Sans', 'Avenir Next', Arial, sans-serif;
+  --font-family-body: 'DM Sans', 'Avenir Next', Arial, sans-serif;
+
+  /* Spacing */
+  --spacing-xs: 0.25rem;  /* 4px */
+  --spacing-sm: 0.5rem;   /* 8px */
+  --spacing-md: 0.75rem;  /* 12px */
+  --spacing-lg: 1.1rem;   /* 17.6px */
+  --spacing-xl: 1.5rem;   /* 24px */
+  --spacing-2xl: 2.25rem; /* 36px */
+  --spacing-3xl: 3rem;    /* 48px */
+
+  /* Border Radius */
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-xl: 30px;
+  --radius-full: 9999px;
+
+  /* Elevation Shadows */
+  --shadow-sm: 0 2px 8px rgba(36, 42, 39, 0.06);
+  --shadow-md: 0 8px 24px rgba(36, 42, 39, 0.12);
+  --shadow-lg: 0 16px 40px rgba(36, 42, 39, 0.18);
+  --shadow-glow: 0 0 30px rgba(63, 98, 84, 0.35);
+  --shadow-accent-glow: 0 0 25px rgba(123, 141, 131, 0.4);
+  --shadow-dark: 0 20px 45px rgba(0, 0, 0, 0.5);
+
+  /* Transitions */
+  --transition-fast: 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-normal: 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-slow: 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* Layout Limits */
+  --container-max-width: 1200px;
+  --header-height: 72px;
+}

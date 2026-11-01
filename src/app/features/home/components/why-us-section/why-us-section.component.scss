@@ -1,0 +1,189 @@
+@use 'mixins' as *;
+
+.why-us-section {
+  padding: 3rem 0;
+  background: linear-gradient(180deg, #f8f9f7 0%, #FFFFFF 100%);
+  color: var(--color-text-main);
+  position: relative;
+}
+
+.pillars-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-xl);
+  margin-top: var(--spacing-xl);
+  position: relative;
+  z-index: 2;
+
+  @include respond-to('lg') {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.pillar-card {
+  background: #FFFFFF;
+  border: 1.5px solid #dde4df;
+  border-radius: 24px;
+  padding: 1.75rem;
+  box-shadow: 0 12px 36px rgba(42, 41, 46, 0.05), 0 2px 6px rgba(42, 41, 46, 0.03);
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+
+  /* Top Accent Bar */
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: linear-gradient(90deg, #3f6254 0%, #557766 100%);
+    border-radius: 24px 24px 0 0;
+  }
+
+  &.pillar-right::before {
+    background: linear-gradient(90deg, #81958a 0%, #557766 100%);
+    border-radius: 24px 24px 0 0;
+  }
+
+  &:hover {
+    transform: translateY(-6px);
+    border-color: rgba(63, 98, 84, 0.4);
+    box-shadow: 0 20px 40px rgba(42, 41, 46, 0.08);
+
+    &.pillar-right {
+      border-color: rgba(129, 149, 138, 0.4);
+    }
+
+    .pillar-icon {
+      transform: scale(1.06) rotate(-3deg);
+    }
+  }
+}
+
+.pillar-header {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-md);
+  padding-bottom: var(--spacing-md);
+  border-bottom: 1px solid #dde4df;
+}
+
+.pillar-icon {
+  width: 50px;
+  height: 50px;
+  min-width: 50px;
+  border-radius: var(--radius-md);
+  background: linear-gradient(135deg, rgba(63, 98, 84, 0.12) 0%, rgba(63, 98, 84, 0.04) 100%);
+  border: 1px solid rgba(63, 98, 84, 0.25);
+  color: #6b8577;
+  @include flex-center;
+  box-shadow: 0 6px 16px rgba(63, 98, 84, 0.12);
+  transition: transform var(--transition-normal);
+
+  &.green-icon {
+    background: linear-gradient(135deg, rgba(129, 149, 138, 0.12) 0%, rgba(129, 149, 138, 0.04) 100%);
+    border-color: rgba(129, 149, 138, 0.25);
+    color: #81958a;
+    box-shadow: 0 6px 16px rgba(129, 149, 138, 0.12);
+  }
+}
+
+.pillar-titles {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.pillar-badge {
+  display: inline-block;
+  align-self: flex-start;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 1.1px;
+  text-transform: uppercase;
+  color: #557766;
+  background: rgba(63, 98, 84, 0.1);
+  border: 1px solid rgba(63, 98, 84, 0.2);
+  padding: 0.2rem 0.6rem;
+  border-radius: var(--radius-full);
+  margin-bottom: 0.15rem;
+
+  &.green-badge {
+    color: #557766;
+    background: rgba(129, 149, 138, 0.1);
+    border-color: rgba(129, 149, 138, 0.2);
+  }
+}
+
+.pillar-name {
+  font-size: 1.28rem;
+  font-weight: 800;
+  color: #2e3430;
+  margin: 0;
+  line-height: 1.25;
+}
+
+.pillar-sub {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: #707873;
+  margin: 0;
+}
+
+.pillar-points {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+
+  li {
+    background: #f8f9f7;
+    border: 1px solid #dde4df;
+    border-radius: 14px;
+    padding: 0.65rem 0.9rem;
+    display: flex;
+    align-items: flex-start;
+    gap: var(--spacing-sm);
+    font-size: 0.88rem;
+    line-height: 1.55;
+    color: #39433f;
+    box-shadow: 0 2px 6px rgba(42, 41, 46, 0.02);
+    transition: all 0.25s ease;
+
+    &:hover {
+      transform: translateX(6px);
+      background: #FFFFFF;
+      border-color: rgba(63, 98, 84, 0.4);
+      box-shadow: 0 6px 20px rgba(42, 41, 46, 0.06);
+    }
+
+    .point-icon {
+      min-width: 22px;
+      height: 22px;
+      padding: 2px;
+      border-radius: var(--radius-full);
+      background: rgba(63, 98, 84, 0.12);
+      color: #6b8577;
+      margin-top: 2px;
+
+      &.green-pt {
+        background: rgba(129, 149, 138, 0.12);
+        color: #81958a;
+      }
+    }
+  }
+}
+
+.pillar-card{border-radius:2px;box-shadow:0 14px 40px rgba(36, 42, 39,.055)}
+.pillar-icon,.pillar-icon.green-icon{background:#eff2ef;border:1px solid #dde4df;color:#6b8577;box-shadow:none;border-radius:2px}
+.pillar-badge,.pillar-badge.green-badge{color:#314c40;background:#eff2ef;border-color:#dde4df;border-radius:2px}
+.pillar-points li{border-radius:2px;background:#f8f9f7;border-color:#dde4df;box-shadow:none}.pillar-points li .point-icon,.pillar-points li .point-icon.green-pt{background:#eff2ef;color:#6b8577}
+.pillar-points li:hover{border-color:#81958a}
+.pillar-card{border-radius:18px}

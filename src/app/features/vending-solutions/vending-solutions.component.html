@@ -1,0 +1,208 @@
+<div class="vending-page">
+  <!-- Professional Header Banner -->
+  <section class="page-header-banner">
+    <div class="ambient-spotlight"></div>
+    <div class="container header-container">
+      <div class="header-badge">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        <span>INFINITY TECS EQUIPMENT CATALOG • EGYPT</span>
+      </div>
+
+      <h1 class="header-title">Automated Vending & Coffee Solutions</h1>
+      <p class="header-subtitle">
+        Explore our complete catalog of commercial bean-to-cup espresso machines, standing hot beverage towers, and temperature-controlled snack vending units.
+      </p>
+
+      <!-- Key Catalog Stats -->
+      <div class="catalog-header-stats">
+        <div class="hstat-item">
+          <span class="hstat-value">30+</span>
+          <span class="hstat-label">Model Variants</span>
+        </div>
+        <div class="hstat-divider"></div>
+        <div class="hstat-item">
+          <span class="hstat-value">100%</span>
+          <span class="hstat-label">Italian Engineering</span>
+        </div>
+        <div class="hstat-divider"></div>
+        <div class="hstat-item">
+          <span class="hstat-value">VendPlace</span>
+          <span class="hstat-label">IoT Telemetry Ready</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Category Selection Showcase -->
+  <section class="categories-showcase-section">
+    <div class="container">
+      <app-section-title
+        badge="Product Lines"
+        title="Select Commercial Line"
+        subtitle="Choose a category below to explore specific machine models, technical specifications, and configurations."
+        [centered]="true"
+      ></app-section-title>
+
+      <div class="professional-categories-grid">
+        
+        <!-- CARD 1: Coffee & Espresso Category -->
+        <div class="pro-cat-card coffee-theme" appScrollReveal [revealDelay]="0.1">
+          <!-- Top Card Graphic Banner -->
+          <div class="pro-card-header">
+            <div class="header-glow"></div>
+            <div class="header-icon-box">
+              <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>
+            </div>
+            <div class="header-meta">
+              <span class="count-badge">
+                <span class="badge-dot"></span>
+                Gourmet Series
+              </span>
+              <span class="tech-pill">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                Bean-to-Cup & Fresh Milk
+              </span>
+            </div>
+          </div>
+
+          <!-- Body Content -->
+          <div class="pro-card-body">
+            <h2 class="cat-headline">Espresso & Gourmet Coffee Solutions</h2>
+            <p class="cat-summary">
+              Commercial bean-to-cup espresso and hot beverage systems designed for offices, hotels, hospitals, and commercial hubs.
+            </p>
+
+            <div class="series-specs-grid">
+              <div class="spec-bullet">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Fresh Coffee Beans & Milk Systems</span>
+              </div>
+              <div class="spec-bullet">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Interactive HD Touchscreen Menu</span>
+              </div>
+              <div class="spec-bullet">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Customizable Drinks & Fast Brewing</span>
+              </div>
+            </div>
+
+            <div class="series-chips-row">
+              <span class="chip">Bean-to-Cup</span>
+              <span class="chip">Fresh Milk</span>
+              <span class="chip">HD Touchscreen</span>
+              <span class="chip">Custom Drinks</span>
+              <span class="chip">IoT Telemetry</span>
+            </div>
+
+            <a [routerLink]="['/vending-solutions', 'coffee']" class="btn-pro-action">
+              <span>View Coffee Machines Catalog</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- CARD 2: Snack & Food Vending Category -->
+        <div class="pro-cat-card snack-theme" appScrollReveal [revealDelay]="0.2">
+          <!-- Top Card Graphic Banner -->
+          <div class="pro-card-header">
+            <div class="header-glow"></div>
+            <div class="header-icon-box">
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <!-- Main Cabinet Body -->
+                <rect x="3.5" y="2" width="17" height="20" rx="3" />
+                <!-- Spacious Glass Display -->
+                <rect x="5.5" y="4" width="9.5" height="11" rx="1.5" />
+                <line x1="5.5" y1="9.5" x2="15" y2="9.5" />
+                <!-- Control & Payment Column -->
+                <line x1="16.5" y1="5.5" x2="18.5" y2="5.5" />
+                <circle cx="17.5" cy="9" r="0.9" fill="currentColor" />
+                <!-- Bottom Delivery Slot Door -->
+                <rect x="5.5" y="16.5" width="13" height="3.5" rx="1.2" />
+              </svg>
+            </div>
+            <div class="header-meta">
+              <span class="count-badge">
+                <span class="badge-dot"></span>
+                Snack & Cold Line
+              </span>
+              <span class="tech-pill">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                4°C Climate Control
+              </span>
+            </div>
+          </div>
+
+          <!-- Body Content -->
+          <div class="pro-card-body">
+            <h2 class="cat-headline">Snack, Food & Beverage Vendors</h2>
+            <p class="cat-summary">
+              High-capacity automated vending centers with climate control, anti-drop elevator delivery, and integrated cashless payment systems.
+            </p>
+
+            <div class="series-specs-grid">
+              <div class="spec-bullet">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Internal 4°C Refrigeration System</span>
+              </div>
+              <div class="spec-bullet">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Smart Touchscreen & Keypad Controls</span>
+              </div>
+              <div class="spec-bullet">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Anti-Drop Elevator & Spiral Delivery</span>
+              </div>
+            </div>
+
+            <div class="series-chips-row">
+              <span class="chip">Cold Drinks & Snacks</span>
+              <span class="chip">Smart Refrigeration</span>
+              <span class="chip">Cashless Payments</span>
+              <span class="chip">Glass Front Showcase</span>
+              <span class="chip">IoT Live Tracking</span>
+            </div>
+
+            <a [routerLink]="['/vending-solutions', 'snacks']" class="btn-pro-action">
+              <span>View Snack Vendors Catalog</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Why Choose Infinity Equipment (Features Section) -->
+      <div class="catalog-features-banner" appScrollReveal>
+        <div class="feat-card">
+          <div class="feat-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+          </div>
+          <h4>Italian Craftsmanship</h4>
+          <p>Precision-engineered in Italy for high-volume commercial reliability and longevity.</p>
+        </div>
+
+        <div class="feat-card">
+          <div class="feat-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          </div>
+          <h4>VendPlace IoT Connected</h4>
+          <p>Live inventory tracking, sales analytics, and telemetry integration out of the box.</p>
+        </div>
+
+        <div class="feat-card">
+          <div class="feat-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+          </div>
+          <h4>Cairo Support & Parts</h4>
+          <p>Dedicated technical support, local warranty, and original spare parts in Egypt.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+</div>
+
+
+
+

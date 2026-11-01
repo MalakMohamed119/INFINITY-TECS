@@ -1,0 +1,50 @@
+<div class="automation-page">
+  <!-- Banner -->
+  <section class="auto-banner">
+    <div class="container">
+      <span class="auto-badge">Engineering & Systems Integration</span>
+      <h1>Industrial Automation Engineering</h1>
+      <p>Transforming industrial infrastructure in Egypt through intelligent PLC control, SCADA monitoring, utilities optimization, and water process automation.</p>
+    </div>
+  </section>
+
+  <!-- Sub-Services Cards -->
+  <section class="services-list-section">
+    <div class="container">
+      <app-section-title
+        badge="Specialized Engineering Domains"
+        title="Industrial Systems Architecture"
+        subtitle="Empowering factories, water utilities, and infrastructure facilities with resilient automation."
+        [centered]="true"
+      ></app-section-title>
+
+      <div class="services-stack">
+        <div 
+          class="auto-card" 
+          *ngFor="let s of services; let i = index"
+          [id]="s.id"
+          appScrollReveal
+          [revealDelay]="i * 0.1"
+        >
+          <div class="card-left">
+            <span class="card-num">0{{ i + 1 }}</span>
+            <h3>{{ s.title }}</h3>
+            <p class="subtitle">{{ s.subtitle }}</p>
+            <p class="desc">{{ s.description }}</p>
+          </div>
+
+          <div class="card-right">
+            <h4>Engineering Capabilities:</h4>
+            <ul>
+              <li *ngFor="let h of s.highlights">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>{{ h }}</span>
+              </li>
+            </ul>
+            <a routerLink="/contact" class="btn-consult">Consult Automation Engineer</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

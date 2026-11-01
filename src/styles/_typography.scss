@@ -1,0 +1,55 @@
+/* Google Fonts Typography Import */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+
+body {
+  font-family: var(--font-family-body);
+  color: var(--color-text-main);
+  line-height: 1.55;
+  font-size: 0.92rem;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-family-heading);
+  font-weight: 700;
+  color: var(--color-primary-dark);
+  line-height: 1.22;
+  letter-spacing: -0.015em;
+  margin: 0 0 0.75rem 0;
+}
+
+h1 {
+  font-size: clamp(1.75rem, 3.2vw, 2.5rem);
+  font-weight: 800;
+}
+
+h2 {
+  font-size: clamp(1.35rem, 2.4vw, 1.95rem);
+}
+
+h3 {
+  font-size: clamp(1.1rem, 1.8vw, 1.45rem);
+}
+
+h4 {
+  font-size: clamp(0.95rem, 1.3vw, 1.15rem);
+}
+
+p {
+  margin: 0 0 0.8rem 0;
+  color: var(--color-text-muted);
+}
+
+a {
+  color: var(--color-accent-primary);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+
+  &:hover {
+    color: var(--color-accent-hover);
+  }
+}
+
+/* Refined, lighter heading hierarchy used consistently across the site. */
+h1,h2,h3,h4,h5,h6{font-weight:600}

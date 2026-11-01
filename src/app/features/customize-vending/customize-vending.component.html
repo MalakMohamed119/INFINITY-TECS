@@ -1,0 +1,288 @@
+<div class="configurator-page-light">
+  <!-- Compact Studio Top Header -->
+  <header class="configurator-studio-header">
+    <div class="container header-flex">
+      <div class="header-titles">
+        <span class="studio-badge-plum">3D EQUIPMENT CONFIGURATOR</span>
+        <h1 class="studio-main-title">Customize Your Vending Machine</h1>
+      </div>
+
+      <!-- Quick Industry Preset Pills Row -->
+      <div class="header-presets-box">
+        <span class="preset-label">Quick Presets:</span>
+        <div class="preset-pills-row">
+          <button class="preset-pill" [class.active]="currentPreset === 'gym'" (click)="setPresetIndustry('gym')">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M6.5 6.5h11M6.5 17.5h11M4 9v6M20 9v6M18 7.5v9M6 7.5v9"/></svg>
+            Gym
+          </button>
+          <button class="preset-pill" [class.active]="currentPreset === 'beauty'" (click)="setPresetIndustry('beauty')">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 3l1.912 5.813a2 2 0 001.275 1.275L21 12l-5.813 1.912a2 2 0 00-1.275 1.275L12 21l-1.912-5.813a2 2 0 001.275-1.275L12 3z"/></svg>
+            Beauty
+          </button>
+          <button class="preset-pill" [class.active]="currentPreset === 'pharmacy'" (click)="setPresetIndustry('pharmacy')">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 2v20M2 12h20"/><rect x="8" y="2" width="8" height="20" rx="2" fill="none"/><rect x="2" y="8" width="20" height="8" rx="2" fill="none"/></svg>
+            Pharmacy
+          </button>
+          <button class="preset-pill" [class.active]="currentPreset === 'tech'" (click)="setPresetIndustry('tech')">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+            Tech
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Configurator Studio Stage (Sticky Visualizer + Compact Tabbed Controls Deck) -->
+  <main class="configurator-studio-deck">
+    <div class="container studio-2col-grid">
+      
+      <!-- LEFT COLUMN: Sticky 3D Machine Visualizer Stage -->
+      <div class="machine-stage-col">
+        <div class="visualizer-stage-card">
+          <div class="stage-status-bar">
+            <span class="live-dot-pill">
+              <span class="dot" [style.background]="activeColor.accentColor"></span>
+              EQUIPMENT REFERENCE
+            </span>
+            <div class="stage-chips">
+              <span class="status-chip" *ngIf="hasChiller">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent-primary)" stroke-width="2.5"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                CHILLED 4°C
+              </span>
+              <span class="status-chip elevator" *ngIf="hasElevator">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent-muted)" stroke-width="2.5"><polyline points="7 13 12 18 17 13"/><polyline points="7 6 12 11 17 6"/></svg>
+                ELEVATOR
+              </span>
+              <span class="status-chip pos-chip">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent-primary)" stroke-width="2.5"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg>
+                POS CASHLESS
+              </span>
+            </div>
+          </div>
+
+          <div class="product-reference">
+            <div class="reference-topline">
+              <span>Equipment reference</span>
+              <span>Snack & beverage</span>
+            </div>
+            <figure class="reference-photo" [class.single-reference]="machineSize === 'single'">
+              <img [src]="machineSize === 'double' ? 'assets/images/machines/snacks/luce-xl6-multishop.png' : 'assets/images/machines/snacks/luce-zero-snack-touch.png'" [alt]="machineSize === 'double' ? 'Luce XL6 Multishop double vending machine' : 'Luce Zero Snack Touch vending machine'" />
+            </figure>
+            <div class="reference-brand">
+              <div>
+                <span>Branding preview</span>
+                <strong>{{ customBrandName || 'INFINITY TECS' }}</strong>
+              </div>
+              <span class="brand-swatch" [style.background]="activeColor.accentColor"></span>
+            </div>
+            <div class="reference-specs">
+              <span>{{ machineSize === 'double' ? 'Double cabinet' : 'Single cabinet' }}</span>
+              <span *ngIf="hasChiller">Cooling</span>
+              <span *ngIf="hasElevator">Elevator delivery</span>
+              <span>Cashless payment</span>
+            </div>
+            <p class="reference-note">Shown as a reference. Our team will confirm the final machine and options for your location.</p>
+          </div>
+        </div>
+      </div>
+      <!-- RIGHT COLUMN: Sleek Tabbed Stepper Configurator Panel -->
+      <div class="config-controls-col">
+        <div class="controls-card-deck">
+          
+          <!-- Stepper Tab Pills Navigation Bar -->
+          <div class="stepper-tab-bar step-3col">
+            <button class="step-tab-btn" [class.active]="activeTab === 1" (click)="setTab(1)">
+              <span class="step-num">1</span>
+              <span class="step-name">Branding</span>
+            </button>
+
+            <button class="step-tab-btn" [class.active]="activeTab === 2" (click)="setTab(2)">
+              <span class="step-num">2</span>
+              <span class="step-name">Hardware</span>
+            </button>
+
+            <button class="step-tab-btn" [class.active]="activeTab === 3" (click)="setTab(3)">
+              <span class="step-num">3</span>
+              <span class="step-name">Summary</span>
+            </button>
+          </div>
+
+          <!-- STEP 1 PANE: Branding & Model Size -->
+          <div class="step-pane" *ngIf="activeTab === 1">
+            <div class="pane-header">
+              <h3 class="pane-title">Brand Marquee & Model Size</h3>
+              <p class="pane-sub">Choose machine chassis size and customize top backlit marquee text.</p>
+            </div>
+
+            <!-- MACHINE MODEL SIZE SELECTOR TOGGLE -->
+            <div class="size-selector-group">
+              <label class="size-group-label">Machine Model & Capacity Size:</label>
+              <div class="size-toggle-grid">
+                <button 
+                  class="size-toggle-btn" 
+                  [class.active]="machineSize === 'single'" 
+                  (click)="machineSize = 'single'"
+                >
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="7" y="3" width="10" height="18" rx="2"/><line x1="7" y1="8" x2="17" y2="8"/></svg>
+                  <div class="btn-text">
+                    <span class="t-main">Single Door Model</span>
+                    <span class="t-sub">Slim Cabinet (4 Columns)</span>
+                  </div>
+                </button>
+
+                <button 
+                  class="size-toggle-btn" 
+                  [class.active]="machineSize === 'double'" 
+                  (click)="machineSize = 'double'"
+                >
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="12" y1="3" x2="12" y2="21"/><line x1="3" y1="8" x2="21" y2="8"/></svg>
+                  <div class="btn-text">
+                    <span class="t-main">Double Large Model</span>
+                    <span class="t-sub">Wide Cabinet (5 Columns)</span>
+                  </div>
+                </button>
+              </div>
+            </div>
+
+            <!-- BRAND MARQUEE TEXT FIELD -->
+            <div class="brand-input-group">
+              <label for="brandInput">Header Marquee Text:</label>
+              <input 
+                type="text" 
+                id="brandInput"
+                [(ngModel)]="customBrandName" 
+                placeholder="e.g. GOLD'S GYM VENDING, SEPHORA BEAUTY" 
+                class="brand-field-light"
+              >
+              <span class="field-hint">Changes update live in the 3D preview on the left.</span>
+            </div>
+
+            <div class="pane-actions">
+              <button class="btn-step-next" (click)="nextTab()">
+                <span>Continue to Hardware</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </button>
+            </div>
+          </div>
+
+          <!-- STEP 2 PANE: Optional Hardware Upgrades -->
+          <div class="step-pane" *ngIf="activeTab === 2">
+            <div class="pane-header">
+              <h3 class="pane-title">Optional Hardware Upgrades</h3>
+              <p class="pane-sub">Add advanced cooling, soft elevator drops, or cloud telemetry.</p>
+            </div>
+
+            <div class="toggles-stack-light">
+              <label class="toggle-btn-light" [class.active]="hasChiller" (click)="hasChiller = !hasChiller">
+                <div class="check-mark">✓</div>
+                <div class="t-info">
+                  <span class="t-title">4°C Cooling Chiller Unit</span>
+                  <span class="t-sub">For cold drinks, skincare & OTC meds</span>
+                </div>
+              </label>
+
+              <label class="toggle-btn-light" [class.active]="hasElevator" (click)="hasElevator = !hasElevator">
+                <div class="check-mark">✓</div>
+                <div class="t-info">
+                  <span class="t-title">Soft Elevator Drop System</span>
+                  <span class="t-sub">Protects glass bottles & delicate items</span>
+                </div>
+              </label>
+
+              <label class="toggle-btn-light" [class.active]="hasTelemetry" (click)="hasTelemetry = !hasTelemetry">
+                <div class="check-mark">✓</div>
+                <div class="t-info">
+                  <span class="t-title">Smart Cloud Telemetry CRM</span>
+                  <span class="t-sub">Real-time remote stock & sales tracking</span>
+                </div>
+              </label>
+
+              <label class="toggle-btn-light" [class.active]="hasBrandedWrap" (click)="hasBrandedWrap = !hasBrandedWrap">
+                <div class="check-mark">✓</div>
+                <div class="t-info">
+                  <span class="t-title">Full Body Vinyl Decal Wrap</span>
+                  <span class="t-sub">Custom branded outer graphics</span>
+                </div>
+              </label>
+            </div>
+
+            <div class="pane-actions-between">
+              <button class="btn-step-prev" (click)="prevTab()">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+                <span>Back</span>
+              </button>
+              <button class="btn-step-next" (click)="nextTab()">
+                <span>Review Summary</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </button>
+            </div>
+          </div>
+
+          <!-- STEP 3 PANE: Live Specification Summary & Submission -->
+          <div class="step-pane" *ngIf="activeTab === 3">
+            <div class="pane-header">
+              <h3 class="pane-title">Configuration Summary</h3>
+              <p class="pane-sub">Review your machine specifications and request CAD drawings.</p>
+            </div>
+
+            <div class="summary-details-box">
+              <div class="summary-row">
+                <span class="s-label">Brand Marquee Header:</span>
+                <span class="s-val brand-val">{{ customBrandName || 'INFINITY TECS' }}</span>
+              </div>
+
+              <div class="summary-row">
+                <span class="s-label">Machine Model Size:</span>
+                <span class="s-val">{{ machineSize === 'double' ? 'Double Large Model (5 Columns)' : 'Single Door Model (Standard 4 Columns)' }}</span>
+              </div>
+
+              <div class="summary-row">
+                <span class="s-label">Touchscreen Display:</span>
+                <span class="s-val text-green">32" HD Touchscreen (Included)</span>
+              </div>
+
+              <div class="summary-row">
+                <span class="s-label">Payment System:</span>
+                <span class="s-val text-green">POS Card Terminal & App (Included)</span>
+              </div>
+
+              <div class="summary-row">
+                <span class="s-label">Selected Hardware Add-ons:</span>
+                <div class="add-ons-pills">
+                  <span class="add-pill" *ngIf="hasChiller">4°C Chiller</span>
+                  <span class="add-pill" *ngIf="hasElevator">Elevator Drop</span>
+                  <span class="add-pill" *ngIf="hasTelemetry">Cloud Telemetry</span>
+                  <span class="add-pill" *ngIf="hasBrandedWrap">Vinyl Decal Wrap</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="submit-action-box">
+              <a 
+                routerLink="/request-quote" 
+                [queryParams]="customQueryParams" 
+                class="btn-submit-custom-quote"
+              >
+                <span>Request 3D Custom Quote</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+              <span class="guarantee-note">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent-primary)" stroke-width="2.5" style="display:inline-block; vertical-align:middle; margin-right:4px;"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+                Free CAD Drawings & 3D Renderings Provided
+              </span>
+            </div>
+
+            <div class="pane-actions-between" style="margin-top: 1rem;">
+              <button class="btn-step-prev" (click)="prevTab()">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+                <span>Back to Upgrades</span>
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </main>
+</div>

@@ -1,0 +1,131 @@
+<div class="machine-details-page" *ngIf="machine">
+  <!-- Top Breadcrumbs -->
+  <section class="details-header">
+    <div class="container">
+      <nav class="breadcrumb-nav" aria-label="Breadcrumb">
+        <ol class="breadcrumb-list">
+          <li class="breadcrumb-item">
+            <a routerLink="/" class="crumb-link">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+              <span>Home</span>
+            </a>
+          </li>
+          <li class="breadcrumb-separator">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+          </li>
+          <li class="breadcrumb-item">
+            <a routerLink="/vending-solutions" class="crumb-link">Vending Solutions</a>
+          </li>
+          <li class="breadcrumb-separator">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+          </li>
+          <li class="breadcrumb-item">
+            <a [routerLink]="['/vending-solutions/category', machine.category]" class="crumb-link">{{ machine.category | titlecase }}</a>
+          </li>
+          <li class="breadcrumb-separator">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+          </li>
+          <li class="breadcrumb-item active">
+            <span class="crumb-active">{{ machine.name }}</span>
+          </li>
+        </ol>
+      </nav>
+    </div>
+  </section>
+
+  <!-- Main Content Layout -->
+  <section class="details-main">
+    <div class="container details-grid">
+      <!-- Left: Image Gallery & Badges -->
+      <div class="image-gallery-col">
+        <div class="main-image-box">
+          <span class="badge-tag" *ngIf="machine.badge">{{ machine.badge }}</span>
+          <img 
+            [src]="selectedImage" 
+            [alt]="machine.name"
+            (error)="handleImageError($event)"
+            class="main-img"
+          />
+        </div>
+
+        <div class="thumbnails-row" *ngIf="machine.images.length > 1">
+          <img 
+            *ngFor="let img of machine.images" 
+            [src]="img" 
+            [class.active]="selectedImage === img"
+            (click)="selectedImage = img"
+            (error)="handleImageError($event)"
+            class="thumb-img"
+          />
+        </div>
+      </div>
+
+      <!-- Right: Technical Summary & Inquiry -->
+      <div class="info-col">
+        <div class="sub-badge">{{ machine.subCategory || (machine.category | uppercase) }}</div>
+        <h1 class="machine-title">{{ machine.name }}</h1>
+        <p class="machine-tagline" *ngIf="machine.tagline">{{ machine.tagline }}</p>
+        <p class="machine-description">{{ machine.fullDescription || machine.shortDescription }}</p>
+
+        <!-- Key Features List with SVG Icons -->
+        <div class="features-summary">
+          <h4>Key Engineering Highlights</h4>
+          <ul>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+              <span>High-speed extraction and precision heating controls</span>
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+              <span>Energy efficient heating system with zero stand-by loss</span>
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+              <span>VendPlace Telemetry & Smart Payment System compatible</span>
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+              <span>Full local warranty & maintenance support by Infinity Tecs Cairo</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Action CTAs -->
+        <div class="action-row">
+          <a [routerLink]="['/request-quote']" [queryParams]="{ machine: machine.id }" class="btn-request">
+            Request Proposal & Quote
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a [routerLink]="['/contact']" class="btn-brochure">Ask Technical Team</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Technical Specs Table Section -->
+    <div class="container specs-section" appScrollReveal>
+      <div class="specs-card">
+        <h3>Technical Specifications & Data</h3>
+        <table class="specs-table">
+          <tbody>
+            <tr *ngFor="let spec of machine.specs">
+              <td class="spec-label">{{ spec.label }}</td>
+              <td class="spec-val" [class.heating-highlight]="spec.label.toLowerCase().includes('heating')">{{ spec.value }}</td>
+            </tr>
+            <tr *ngIf="machine.dimensions">
+              <td class="spec-label">Dimensions</td>
+              <td class="spec-val">{{ machine.dimensions }}</td>
+            </tr>
+            <tr>
+              <td class="spec-label">Smart Operations Platform</td>
+              <td class="spec-val">VendPlace Telemetry & Telemetric CRM Ready</td>
+            </tr>
+            <tr>
+              <td class="spec-label">Supplier & Operator</td>
+              <td class="spec-val">Infinity Tecs (Cairo, Egypt)</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+</div>

@@ -1,0 +1,198 @@
+<div class="quote-page">
+  <!-- Banner -->
+  <section class="quote-banner">
+    <div class="container">
+      <span class="quote-badge">Tailored Commercial Proposal</span>
+      <h1>Request a Vending Proposal</h1>
+      <p>Select your equipment preferences below and our sales engineering team in Cairo will prepare a customized quotation within 24 hours.</p>
+    </div>
+  </section>
+
+  <!-- Quote Form -->
+  <section class="quote-section">
+    <div class="container quote-container">
+      <div class="quote-card" appScrollReveal>
+        <!-- Ultra-Premium Attached 3D Configuration Banner -->
+        <div class="custom-config-card-premium" *ngIf="customConfig">
+          <div class="card-top-bar">
+            <div class="badge-status-pill">
+              <span class="live-pulse-dot"></span>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+              <span>3D CUSTOM CONFIGURATION ATTACHED</span>
+            </div>
+            <span class="card-ref-code">3D SPEC ENGINE • READY FOR PROPOSAL</span>
+          </div>
+
+          <div class="card-specs-grid">
+            <!-- Spec Item 1: Marquee Brand Logo -->
+            <div class="spec-tile">
+              <div class="tile-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#3f6254" stroke-width="2.2"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg>
+              </div>
+              <div class="tile-meta">
+                <span class="tile-label">Header Marquee Logo</span>
+                <span class="tile-val brand-highlight">{{ customConfig.brand }}</span>
+              </div>
+            </div>
+
+            <!-- Spec Item 2: Chassis Model -->
+            <div class="spec-tile">
+              <div class="tile-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#3f6254" stroke-width="2.2"><rect x="7" y="2" width="10" height="20" rx="2"/><line x1="7" y1="7" x2="17" y2="7"/><line x1="12" y1="12" x2="12.01" y2="12"/></svg>
+              </div>
+              <div class="tile-meta">
+                <span class="tile-label">Chassis & Capacity</span>
+                <span class="tile-val">{{ customConfig.size }}</span>
+              </div>
+            </div>
+
+            <!-- Spec Item 3: Color Theme -->
+            <div class="spec-tile">
+              <div class="tile-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#3f6254" stroke-width="2.2"><circle cx="12" cy="12" r="10"/><path d="M12 2a7 7 0 1 0 7 7"/></svg>
+              </div>
+              <div class="tile-meta">
+                <span class="tile-label">Body Color Finish</span>
+                <span class="tile-val">{{ customConfig.color }}</span>
+              </div>
+            </div>
+
+            <!-- Spec Item 4: Built-in Equipment -->
+            <div class="spec-tile">
+              <div class="tile-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#81958a" stroke-width="2.2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              </div>
+              <div class="tile-meta">
+                <span class="tile-label">Standard Hardware</span>
+                <span class="tile-val green-text">32" HD Touch + POS Cashless</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hardware Upgrades Section -->
+          <div class="card-upgrades-row">
+            <span class="upgrades-label">Selected Hardware Upgrades:</span>
+            <div class="upgrades-pills-list">
+              <span class="upgrade-chip" *ngIf="customConfig.chiller">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                4°C Cooling Chiller
+              </span>
+              <span class="upgrade-chip elevator" *ngIf="customConfig.elevator">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="7 13 12 18 17 13"/><polyline points="7 6 12 11 17 6"/></svg>
+                Soft Elevator Drop
+              </span>
+              <span class="upgrade-chip telemetry" *ngIf="customConfig.telemetry">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/></svg>
+                Smart Cloud Telemetry
+              </span>
+              <span class="upgrade-chip wrap" *ngIf="customConfig.wrap">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/></svg>
+                Full Vinyl Decal Wrap
+              </span>
+              <span class="upgrade-chip standard" *ngIf="!customConfig.chiller && !customConfig.elevator && !customConfig.telemetry && !customConfig.wrap">
+                Standard Commercial Build
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <form (ngSubmit)="onSubmit()">
+          <!-- Machine Selection Section (Hidden when custom 3D config is attached) -->
+          <div class="form-section-block" *ngIf="!customConfig">
+            <h3>1. Machine & Category Selection</h3>
+            <div class="form-row">
+              <div class="form-group">
+                <label>Vending Category</label>
+                <app-custom-select 
+                  name="machineCategory" 
+                  [(ngModel)]="formData.machineCategory" 
+                  [options]="categoryOptions"
+                  placeholder="Select Category..."
+                ></app-custom-select>
+              </div>
+
+              <div class="form-group">
+                <label>Specific Machine Model (Optional)</label>
+                <app-custom-select 
+                  name="selectedMachineId" 
+                  [(ngModel)]="formData.selectedMachineId" 
+                  (selectionChange)="onMachineSelect()"
+                  [options]="machineOptions"
+                  placeholder="-- Let Infinity Tecs Recommend --"
+                ></app-custom-select>
+              </div>
+            </div>
+
+            <!-- Selected Machine Preview Card -->
+            <div class="selected-machine-card" *ngIf="selectedMachine">
+              <div class="card-info">
+                <div class="model-header">
+                  <span class="model-label">Selected Model:</span>
+                  <span class="model-name">{{ selectedMachine.name }}</span>
+                </div>
+                <p>{{ selectedMachine.shortDescription }}</p>
+              </div>
+              <div class="card-tag" *ngIf="selectedMachine.subCategory">{{ selectedMachine.subCategory }}</div>
+            </div>
+          </div>
+
+          <!-- Quantity & Location -->
+          <div class="form-section-block">
+            <h3>{{ customConfig ? '1.' : '2.' }} Scale & Operating Location</h3>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="units">Estimated Number of Units</label>
+                <input type="number" id="units" name="estimatedUnits" [(ngModel)]="formData.estimatedUnits" min="1" max="50" class="form-input" />
+              </div>
+              <div class="form-group">
+                <label for="location">Location / City *</label>
+                <input type="text" id="location" name="location" [(ngModel)]="formData.location" required placeholder="e.g. New Cairo, 6th of October, Alexandria" class="form-input" />
+              </div>
+            </div>
+          </div>
+
+          <!-- Company Details -->
+          <div class="form-section-block">
+            <h3>{{ customConfig ? '2.' : '3.' }} Contact & Business Info</h3>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Your Name *</label>
+                <input type="text" id="name" name="name" [(ngModel)]="formData.name" required placeholder="John Doe" class="form-input" />
+              </div>
+              <div class="form-group">
+                <label for="company">Company Name *</label>
+                <input type="text" id="company" name="company" [(ngModel)]="formData.company" required placeholder="Corporate Ltd." class="form-input" />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email">Work Email *</label>
+                <input type="email" id="email" name="email" [(ngModel)]="formData.email" required placeholder="john@company.com" class="form-input" />
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number *</label>
+                <input type="tel" id="phone" name="phone" [(ngModel)]="formData.phone" required placeholder="+20 100 000 0000" class="form-input" />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="notes">Additional Requirements or Special Notes</label>
+              <textarea id="notes" name="notes" [(ngModel)]="formData.notes" rows="4" placeholder="Estimated daily coffee cups, preferred payment systems (VendPlace CRM, NFC, Cash, Free dispense)..." class="form-input"></textarea>
+            </div>
+          </div>
+
+          <!-- Alert Feedback -->
+          <div class="alert-box" [class.success]="isSuccess" [class.error]="!isSuccess" *ngIf="submitMessage">
+            {{ submitMessage }}
+          </div>
+
+          <button type="submit" [disabled]="isSubmitting" class="btn-submit-quote">
+            <span *ngIf="!isSubmitting">Submit Proposal Request</span>
+            <span *ngIf="isSubmitting">Processing Request...</span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+</div>

@@ -1,0 +1,42 @@
+<div class="machine-card" [class.dark]="darkTheme">
+  <!-- Badge Header -->
+  <div class="card-badge-row" *ngIf="machine.badge || machine.subCategory">
+    <span class="sub-category-badge">{{ machine.subCategory || (machine.category | uppercase) }}</span>
+    <span class="featured-badge" *ngIf="machine.badge">{{ machine.badge }}</span>
+  </div>
+
+  <!-- Image Container -->
+  <div class="image-wrapper">
+    <img 
+      [src]="machine.images[0]" 
+      [alt]="machine.name"
+      loading="lazy"
+      (error)="handleImageError($event)"
+      class="machine-img"
+    />
+    <div class="hover-overlay">
+      <a [routerLink]="['/vending-solutions/machine', machine.id]" class="quick-view-btn">
+        View Specs & Details
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+  </div>
+
+  <!-- Card Body -->
+  <div class="card-body">
+    <h3 class="machine-title">{{ machine.name }}</h3>
+    <p class="machine-tagline" *ngIf="machine.tagline">{{ machine.tagline }}</p>
+    <p class="machine-description">{{ machine.shortDescription }}</p>
+
+
+    <!-- Actions -->
+    <div class="card-actions">
+      <a [routerLink]="['/vending-solutions/machine', machine.id]" class="btn-details">
+        Full Details
+      </a>
+      <a [routerLink]="['/request-quote']" [queryParams]="{ machine: machine.id }" class="btn-quote">
+        Request Quote
+      </a>
+    </div>
+  </div>
+</div>
