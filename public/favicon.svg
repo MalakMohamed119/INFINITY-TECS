@@ -1,12 +1,12 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
   <defs>
     <linearGradient id="brand" x1="20" y1="38" x2="80" y2="80" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#657B8F"/>
-      <stop offset="1" stop-color="#26394D"/>
+      <stop stop-color="#F4F8FA"/>
+      <stop offset="1" stop-color="#C9DCE8"/>
     </linearGradient>
     <linearGradient id="bean" x1="24" y1="12" x2="40" y2="38" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#A87556"/>
-      <stop offset="1" stop-color="#68432F"/>
+      <stop stop-color="#D59A70"/>
+      <stop offset="1" stop-color="#925B3B"/>
     </linearGradient>
   </defs>
   <g stroke="url(#brand)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
@@ -25,6 +25,6 @@
   <path d="M44 77V49H52V55C54.5 51 58.5 48 64 48C73 48 78 54 78 64V77H70V65C70 59 68 56 63 56C57.5 56 53 60 53 66V77H44Z" fill="url(#brand)"/>
   <g transform="rotate(-22 30 27)">
     <ellipse cx="30" cy="27" rx="7" ry="10" fill="url(#bean)"/>
-    <path d="M31 18C27 23 34 28 29 36" stroke="#D9B49B" stroke-width="1.6" stroke-linecap="round"/>
+    <path d="M31 18C27 23 34 28 29 36" stroke="#F0C7A8" stroke-width="1.6" stroke-linecap="round"/>
   </g>
 </svg>
