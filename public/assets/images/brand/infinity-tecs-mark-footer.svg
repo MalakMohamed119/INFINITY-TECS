@@ -27,8 +27,8 @@
   <path d="M44 77V49H52V55C54.5 51 58.5 48 64 48C73 48 78 54 78 64V77H70V65C70 59 68 56 63 56C57.5 56 53 60 53 66V77H44Z" fill="url(#brand)"/>
   <g transform="rotate(-22 30 31.5)">
     <path d="M30 23.5C26.8 23.2 24.5 26.3 24.5 30.2C24.5 34.2 26.7 38.8 29.9 39.5C33 40.1 35.5 36.7 35.5 32.6C35.5 28.4 33.2 24.1 30 23.5Z" fill="url(#bean)" stroke="#4B2D1E" stroke-width=".55"/>
-    <path d="M31.4 24.8C27.8 28.6 33.2 31.7 28.7 38.2" stroke="#4A2B1C" stroke-opacity=".8" stroke-width="1.65" stroke-linecap="round"/>
-    <path d="M30.8 25.3C28.3 28.8 32.9 31.6 28.2 37.6" stroke="#D7A77D" stroke-opacity=".85" stroke-width=".62" stroke-linecap="round"/>
+    <path d="M31.4 24.8C27.8 28.6 33.2 31.7 28.7 38.2" stroke="#3A2014" stroke-opacity=".95" stroke-width="2.35" stroke-linecap="round"/>
+    <path d="M30.8 25.3C28.3 28.8 32.9 31.6 28.2 37.6" stroke="#F2C997" stroke-opacity=".98" stroke-width="1.45" stroke-linecap="round"/>
     <path d="M26.4 27.3C27.1 25.9 28.3 25.1 29.7 25" stroke="#F0C69D" stroke-opacity=".72" stroke-width=".9" stroke-linecap="round"/>
     <ellipse cx="27.7" cy="29.1" rx=".55" ry="1.15" fill="#E6B589" fill-opacity=".42" transform="rotate(18 27.7 29.1)"/>
   </g>
