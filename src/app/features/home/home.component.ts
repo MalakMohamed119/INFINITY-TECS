@@ -33,7 +33,7 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
     this.seoService.setSeoData({
       title: 'Infinity Tecs | Italian-Made Machines & Vending Solutions',
-      description: 'Coffee and vending machines manufactured in Italy, installed and supported by our local after-sales and maintenance team in Egypt.'
+      description: 'Italian-made vending machines and solutions, installed and supported by our local after-sales and maintenance team in Egypt.'
     });
   }
 

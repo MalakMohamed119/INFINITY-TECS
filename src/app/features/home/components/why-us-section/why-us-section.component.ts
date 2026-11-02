@@ -16,7 +16,7 @@ export class WhyUsSectionComponent {
     subtitle: 'Premium equipment with a team in your corner',
     icon: 'shield-check',
     points: [
-      'Carefully selected coffee and vending machines manufactured in Italy for dependable everyday performance.',
+      'Carefully selected vending machines manufactured in Italy for dependable everyday performance.',
       'Site assessment, installation and practical handover from experienced local engineers.',
       'Clear recommendations that match the machine to your team, space and service needs.'
     ]

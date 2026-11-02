@@ -14,13 +14,13 @@ export class HeroSectionComponent implements OnInit, OnDestroy {
       src: 'assets/images/machines/coffee/rhea-bl-ec.png',
       alt: 'rhea BL eC tabletop coffee machine',
       name: 'rhea BL eC',
-      detail: 'Compact Italian coffee solution'
+      detail: 'Compact Italian-made machine'
     },
     {
       src: 'assets/images/machines/coffee/larhea-v-plus-grande.webp',
       alt: 'laRhea V+ Grande bean-to-cup coffee machine',
       name: 'laRhea V+ Grande',
-      detail: 'Italian bean-to-cup system'
+      detail: 'Italian-made bean-to-cup system'
     },
     {
       src: 'assets/images/machines/coffee/rhtt10.png',
