@@ -1,7 +1,7 @@
 @use 'mixins' as *;
 
 .details-header {
-  background: #26394d;
+  background: #08263F;
   padding: 14px 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
@@ -46,7 +46,7 @@
     white-space: nowrap;
 
     &:hover {
-      color: #258f87;
+      color: #008F80;
       background: rgba(21, 157, 148, 0.12);
     }
   }
@@ -223,7 +223,7 @@
       gap: 10px;
 
       svg {
-        color: #258f87;
+        color: #008F80;
         flex-shrink: 0;
       }
     }
@@ -341,7 +341,7 @@
     color: var(--color-text-muted);
 
     &.heating-highlight {
-      color: #258f87;
+      color: #008F80;
       font-weight: 800;
       background: transparent;
       border: none;

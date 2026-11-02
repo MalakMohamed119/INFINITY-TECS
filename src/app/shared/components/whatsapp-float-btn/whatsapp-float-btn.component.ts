@@ -29,11 +29,11 @@ import { CommonModule } from '@angular/common';
       right: 30px;
       width: 58px;
       height: 58px;
-      background: #159d94;
+      background: #00AF9A;
       color: #FFF;
       border-radius: var(--radius-full);
       @include flex-center;
-      box-shadow: 0 8px 24px rgba(63, 98, 84, 0.28);
+      box-shadow: 0 8px 24px rgba(0, 143, 128, 0.28);
       z-index: 999;
       transition: transform var(--transition-fast), box-shadow var(--transition-fast);
 
@@ -55,7 +55,7 @@ import { CommonModule } from '@angular/common';
 
       &:hover {
         transform: scale(1.1);
-        box-shadow: 0 12px 30px rgba(63, 98, 84, 0.4);
+        box-shadow: 0 12px 30px rgba(0, 143, 128, 0.4);
 
         .tooltip-text {
           opacity: 1;
@@ -69,7 +69,7 @@ import { CommonModule } from '@angular/common';
       position: absolute;
       inset: -4px;
       border-radius: var(--radius-full);
-      border: 2px solid #79c9c1;
+      border: 2px solid #79D9CC;
       animation: pulse 2s infinite;
       pointer-events: none;
     }

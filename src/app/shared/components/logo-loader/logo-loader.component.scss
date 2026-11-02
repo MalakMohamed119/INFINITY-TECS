@@ -73,8 +73,8 @@
   inset: 0;
   border-radius: 50%;
   border: 4px solid transparent;
-  border-top-color: #258f87;
-  border-right-color: var(--color-accent-muted, #35a99e);
+  border-top-color: #008F80;
+  border-right-color: var(--color-accent-muted, #00AF9A);
   border-bottom-color: rgba(21, 157, 148, 0.18);
   border-left-color: rgba(121, 201, 193, 0.18);
   animation: spin 1.2s linear infinite;
@@ -101,9 +101,9 @@
   }
 }
 
-.brand-mark{width:112px;height:112px;display:grid;place-items:center;border-radius:50%;background:#159d94;color:#f7f8f7;font:italic 72px Georgia,serif;box-shadow:0 12px 32px rgba(38, 57, 77,.2)}
-.brand-glow{background:radial-gradient(circle,rgba(164,91,62,.2),rgba(105,116,95,.12) 50%,transparent 70%);filter:blur(34px)}
-.spinner-ring{border-top-color:#258f87;border-right-color:#35a99e;border-bottom-color:rgba(164,91,62,.15);border-left-color:rgba(105,116,95,.15);filter:none}
+.brand-mark{width:112px;height:112px;display:grid;place-items:center;border-radius:50%;background:#00AF9A;color:#FBFCFA;font:italic 72px Georgia,serif;box-shadow:0 12px 32px rgba(38, 57, 77,.2)}
+.brand-glow{background:radial-gradient(circle,rgba(0,175,154,.2),rgba(8,38,63,.12) 50%,transparent 70%);filter:blur(34px)}
+.spinner-ring{border-top-color:#008F80;border-right-color:#00AF9A;border-bottom-color:rgba(0,175,154,.15);border-left-color:rgba(8,38,63,.15);filter:none}
 
 
 
@@ -125,7 +125,7 @@
     font-size: 0.95rem;
     font-weight: 800;
     letter-spacing: 4px;
-    color: #258f87;
+    color: #008F80;
     text-transform: uppercase;
     text-shadow: 0 0 12px rgba(21, 157, 148, 0.7);
     margin: 0 auto;
@@ -174,12 +174,12 @@
       width: 6px;
       height: 6px;
       border-radius: 50%;
-      background-color: #258f87;
+      background-color: #008F80;
       display: inline-block;
       animation: pulseDot 1.4s infinite ease-in-out both;
 
       &:nth-child(1) { animation-delay: 0s; }
-      &:nth-child(2) { animation-delay: 0.2s; background-color: var(--color-accent-muted, #35a99e); }
+      &:nth-child(2) { animation-delay: 0.2s; background-color: var(--color-accent-muted, #00AF9A); }
       &:nth-child(3) { animation-delay: 0.4s; }
     }
   }

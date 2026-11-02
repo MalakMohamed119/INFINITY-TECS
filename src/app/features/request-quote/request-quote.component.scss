@@ -9,7 +9,7 @@
   .quote-badge {
     display: inline-block;
     background: rgba(21, 157, 148, 0.15);
-    color: #258f87;
+    color: #008F80;
     border: 1px solid rgba(21, 157, 148, 0.3);
     padding: 6px 16px;
     border-radius: var(--radius-full);
@@ -116,7 +116,7 @@
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
 
   &:focus {
-    border-color: #258f87;
+    border-color: #008F80;
     box-shadow: 0 0 0 3.5px rgba(21, 157, 148, 0.15);
     background: #FFF;
   }
@@ -159,7 +159,7 @@ select.form-input {
     .model-label {
       font-size: 0.85rem;
       font-weight: 700;
-      color: #258f87;
+      color: #008F80;
       text-transform: uppercase;
       letter-spacing: 0.5px;
     }
@@ -180,7 +180,7 @@ select.form-input {
 
   .card-tag {
     background: var(--color-primary-dark);
-    color: #258f87;
+    color: #008F80;
     border: 1px solid rgba(21, 157, 148, 0.35);
     padding: 6px 18px;
     border-radius: var(--radius-full);
@@ -201,15 +201,15 @@ select.form-input {
   margin-bottom: var(--spacing-md);
 
   &.success {
-    background: #eef2f1;
+    background: #F1F6F4;
     color: var(--color-success);
-    border: 1px solid #dfe7e6;
+    border: 1px solid #E1EBE8;
   }
 
   &.error {
-    background: #eef2f1;
-    color: #258f87;
-    border: 1px solid #dfe7e6;
+    background: #F1F6F4;
+    color: #008F80;
+    border: 1px solid #E1EBE8;
   }
 }
 
@@ -238,8 +238,8 @@ select.form-input {
 
 /* ULTRA-PREMIUM ATTACHED 3D CONFIGURATION CARD */
 .custom-config-card-premium {
-  background: linear-gradient(145deg, #26394d 0%, #40566d 55%, #26394d 100%);
-  border: 2px solid #159d94;
+  background: linear-gradient(145deg, #08263F 0%, #173D56 55%, #08263F 100%);
+  border: 2px solid #00AF9A;
   border-radius: var(--radius-xl);
   padding: 1.5rem;
   margin-bottom: var(--spacing-2xl);
@@ -262,7 +262,7 @@ select.form-input {
       gap: 8px;
       font-size: 0.76rem;
       font-weight: 900;
-      color: #258f87;
+      color: #008F80;
       background: rgba(21, 157, 148, 0.12);
       border: 1px solid rgba(21, 157, 148, 0.3);
       padding: 5px 14px;
@@ -270,15 +270,15 @@ select.form-input {
       letter-spacing: 0.8px;
 
       svg {
-        color: #258f87;
+        color: #008F80;
       }
 
       .live-pulse-dot {
         width: 7px;
         height: 7px;
         border-radius: 50%;
-        background: #79c9c1;
-        box-shadow: 0 0 8px #79c9c1;
+        background: #79D9CC;
+        box-shadow: 0 0 8px #79D9CC;
       }
     }
 
@@ -341,13 +341,13 @@ select.form-input {
           text-overflow: ellipsis;
 
           &.brand-highlight {
-            color: #258f87;
+            color: #008F80;
             letter-spacing: 0.5px;
             text-transform: uppercase;
           }
 
           &.green-text {
-            color: #79c9c1;
+            color: #79D9CC;
           }
         }
       }
@@ -378,7 +378,7 @@ select.form-input {
       .upgrade-chip {
         font-size: 0.72rem;
         font-weight: 800;
-        color: #258f87;
+        color: #008F80;
         background: rgba(21, 157, 148, 0.14);
         border: 1px solid rgba(21, 157, 148, 0.3);
         padding: 5px 12px;
@@ -388,19 +388,19 @@ select.form-input {
         gap: 6px;
 
         &.elevator {
-          color: #79c9c1;
+          color: #79D9CC;
           background: rgba(245, 158, 11, 0.14);
           border-color: rgba(245, 158, 11, 0.3);
         }
 
         &.telemetry {
-          color: #117b75;
+          color: #007D70;
           background: rgba(56, 189, 248, 0.14);
           border-color: rgba(56, 189, 248, 0.3);
         }
 
         &.wrap {
-          color: #79c9c1;
+          color: #79D9CC;
           background: rgba(236, 72, 153, 0.14);
           border-color: rgba(236, 72, 153, 0.3);
         }

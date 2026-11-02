@@ -49,7 +49,7 @@ select, .modern-select, .form-select {
   font-weight: 600;
   color: var(--color-primary-dark);
   background-color: #FFFFFF;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='none' stroke='%233F6254' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='none' stroke='%23008F80' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
   background-repeat: no-repeat;
   background-position: calc(100% - 16px) center;
   background-size: 18px 18px;
@@ -61,29 +61,29 @@ select, .modern-select, .form-select {
   transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
 
   &:hover {
-    border-color: var(--color-accent-primary, #159d94);
+    border-color: var(--color-accent-primary, #00AF9A);
     background-color: rgba(255, 255, 255, 0.95);
     box-shadow: 0 6px 20px rgba(21, 157, 148, 0.14);
     transform: translateY(-1px);
   }
 
   &:focus {
-    border-color: var(--color-accent-primary, #159d94);
+    border-color: var(--color-accent-primary, #00AF9A);
     box-shadow: 0 0 0 4px rgba(21, 157, 148, 0.2), 0 8px 24px rgba(21, 157, 148, 0.15);
     background-color: #FFFFFF;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='none' stroke='%233F6254' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m18 15-6-6-6 6'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='none' stroke='%23008F80' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m18 15-6-6-6 6'/%3E%3C/svg%3E");
   }
 
   /* Option Styling */
   option {
-    background-color: #26394d;
-    color: #f7f8f7;
+    background-color: #08263F;
+    color: #FBFCFA;
     font-size: 0.95rem;
     font-weight: 600;
     padding: 14px 18px;
 
     &:checked {
-      background-color: #159d94 !important;
+      background-color: #00AF9A !important;
       color: #FFFFFF !important;
       font-weight: 700;
     }
@@ -93,20 +93,20 @@ select, .modern-select, .form-select {
 /* Dark Theme Dropdown Styling */
 .dark-select, .dark select {
   background-color: rgba(38, 57, 77, 0.75);
-  color: var(--color-cream-light, #f7f8f7);
+  color: var(--color-cream-light, #FBFCFA);
   border-color: rgba(21, 157, 148, 0.35);
   backdrop-filter: blur(10px);
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='none' stroke='%233F6254' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='none' stroke='%23008F80' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
 
   &:hover {
     background-color: rgba(38, 57, 77, 0.9);
-    border-color: var(--color-accent-primary, #159d94);
+    border-color: var(--color-accent-primary, #00AF9A);
     box-shadow: 0 0 20px rgba(21, 157, 148, 0.25);
   }
 
   &:focus {
-    background-color: #26394d;
-    border-color: var(--color-accent-primary, #159d94);
+    background-color: #08263F;
+    border-color: var(--color-accent-primary, #00AF9A);
     box-shadow: 0 0 0 4px rgba(21, 157, 148, 0.25), 0 0 25px rgba(21, 157, 148, 0.3);
   }
 }
@@ -152,10 +152,10 @@ a[class*="btn-"],button[class*="btn-"],.button-primary,.service-btn,.filter-chip
 .machine-card,.service-card,.pillar-card,.teaser-card,.app-note,.app-note-detail,.visualizer-stage-card,.product-reference,.selected-machine-card{border-radius:18px!important}
 .machine-card,.service-card,.pillar-card,.teaser-card,.app-note,.visualizer-stage-card,.product-reference{overflow:hidden}
 .pillar-list li,.pillar-points li,.t-pill,.pillar-badge,.sub-category-badge,.featured-badge,.specs-preview{border-radius:10px!important}
-.service-card:hover .service-btn{background:#eef2f1!important;border-color:#a9bdc4!important;color:#26394d!important}
-.service-card .service-btn svg,.filter-chip svg,.filter-chip.active svg,.btn-teaser-glow svg,.btn-cta-gold svg,.btn-cta-outline svg,.quick-view-btn svg{color:#35b5aa!important;stroke:#35b5aa!important}
-.btn-teaser-glow:hover,.btn-cta-gold:hover{background:#eef2f1!important;color:#26394d!important;border-color:#dce4e5!important}
-.btn-cta-outline:hover{background:#eef2f1!important;color:#26394d!important}
+.service-card:hover .service-btn{background:#F1F6F4!important;border-color:#a9bdc4!important;color:#08263F!important}
+.service-card .service-btn svg,.filter-chip svg,.filter-chip.active svg,.btn-teaser-glow svg,.btn-cta-gold svg,.btn-cta-outline svg,.quick-view-btn svg{color:#32C3B0!important;stroke:#32C3B0!important}
+.btn-teaser-glow:hover,.btn-cta-gold:hover{background:#F1F6F4!important;color:#08263F!important;border-color:#DCE7E5!important}
+.btn-cta-outline:hover{background:#F1F6F4!important;color:#08263F!important}
 
 /* Site-wide typography: keep hierarchy clear without the extra-heavy look. */
 h1,h2,h3,h4,h5,h6{font-weight:600!important}

@@ -27,12 +27,12 @@
   transition: all var(--transition-fast);
 
   svg {
-    color: #258f87;
+    color: #008F80;
     transition: color var(--transition-fast);
   }
 
   &:hover {
-    border-color: #258f87;
+    border-color: #008F80;
     background: rgba(64, 86, 109, 0.6);
     color: #FFFFFF;
   }
@@ -40,7 +40,7 @@
   &.active {
     background: linear-gradient(135deg, var(--color-accent-primary) 0%, var(--color-accent-secondary) 100%);
     color: #FFFFFF;
-    border-color: #258f87;
+    border-color: #008F80;
     box-shadow: var(--shadow-glow);
 
     svg {
@@ -93,15 +93,15 @@
 
   &:hover {
     background: linear-gradient(135deg, var(--color-accent-primary) 0%, var(--color-accent-secondary) 100%);
-    border-color: #258f87;
+    border-color: #008F80;
     color: #FFFFFF;
     transform: translateY(-2px);
     box-shadow: var(--shadow-glow);
   }
 }
-.featured-section{padding:clamp(4rem,7vw,6rem) 0;background:#eef2f1;color:#2d3d4c}
+.featured-section{padding:clamp(4rem,7vw,6rem) 0;background:#F1F6F4;color:#2d3d4c}
 .filter-tabs{justify-content:flex-start;margin:2.2rem 0 1.5rem;gap:.55rem}
-.filter-chip{background:transparent;border:1px solid #dce4e5;color:#526777;border-radius:0;padding:.7rem 1rem;font-size:.8rem}
-.filter-chip svg{color:#258f87}.filter-chip:hover{background:#eef2f1;border-color:#a9bdc4;color:#26394d}
-.filter-chip.active{background:#26394d;color:#f7f8f7;border-color:#26394d;box-shadow:none}.filter-chip.active svg{color:#79c9c1}
-.btn-full-catalog{border:1px solid #26394d;border-radius:0;color:#26394d;padding:.9rem 1.2rem;font-weight:600}.btn-full-catalog:hover{background:#26394d;border-color:#26394d;box-shadow:none}
+.filter-chip{background:transparent;border:1px solid #DCE7E5;color:#496779;border-radius:0;padding:.7rem 1rem;font-size:.8rem}
+.filter-chip svg{color:#008F80}.filter-chip:hover{background:#F1F6F4;border-color:#a9bdc4;color:#08263F}
+.filter-chip.active{background:#08263F;color:#FBFCFA;border-color:#08263F;box-shadow:none}.filter-chip.active svg{color:#79D9CC}
+.btn-full-catalog{border:1px solid #08263F;border-radius:0;color:#08263F;padding:.9rem 1.2rem;font-weight:600}.btn-full-catalog:hover{background:#08263F;border-color:#08263F;box-shadow:none}

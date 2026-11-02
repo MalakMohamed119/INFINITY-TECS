@@ -70,7 +70,7 @@
     white-space: nowrap;
 
     .accent {
-      color: #258f87;
+      color: #008F80;
     }
   }
 
@@ -119,7 +119,7 @@
     }
 
     &:hover, &.active {
-      color: #258f87;
+      color: #008F80;
 
       &::after {
         width: 100%;
@@ -139,7 +139,7 @@
 .btn-portal {
   background: rgba(129, 149, 138, 0.12);
   border: 1px solid rgba(129, 149, 138, 0.4);
-  color: #79c9c1 !important;
+  color: #79D9CC !important;
   padding: 8px 16px;
   border-radius: var(--radius-full);
   font-size: 0.85rem;
@@ -152,23 +152,23 @@
   transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 
   svg {
-    stroke: #79c9c1;
+    stroke: #79D9CC;
     transition: stroke 0.25s ease;
   }
 
   .pulse-dot {
     width: 8px;
     height: 8px;
-    background: #79c9c1;
+    background: #79D9CC;
     border-radius: 50%;
-    box-shadow: 0 0 10px #79c9c1;
+    box-shadow: 0 0 10px #79D9CC;
     animation: pulseGlow 1.8s infinite;
     transition: all 0.25s ease;
   }
 
   &:hover {
-    background: linear-gradient(135deg, #79c9c1 0%, #35b5aa 100%) !important;
-    border-color: #79c9c1 !important;
+    background: linear-gradient(135deg, #79D9CC 0%, #32C3B0 100%) !important;
+    border-color: #79D9CC !important;
     color: #FFFFFF !important;
     transform: translateY(-2px);
     box-shadow: 0 6px 20px rgba(129, 149, 138, 0.45);
@@ -298,7 +298,7 @@
       justify-content: space-between;
 
       &:hover, &.active {
-        color: #258f87;
+        color: #008F80;
         background: rgba(21, 157, 148, 0.12);
       }
     }
@@ -312,7 +312,7 @@
     .mobile-portal-btn {
       background: rgba(129, 149, 138, 0.14);
       border: 1.5px solid rgba(129, 149, 138, 0.45);
-      color: #79c9c1 !important;
+      color: #79D9CC !important;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -326,13 +326,13 @@
       .pulse-dot {
         width: 8px;
         height: 8px;
-        background: #79c9c1;
+        background: #79D9CC;
         border-radius: 50%;
-        box-shadow: 0 0 10px #79c9c1;
+        box-shadow: 0 0 10px #79D9CC;
       }
 
       &:hover {
-        background: #79c9c1 !important;
+        background: #79D9CC !important;
         color: #FFF !important;
       }
     }
@@ -465,16 +465,16 @@
 
 .site-header{background:rgba(247,245,239,.96);height:76px;border-bottom:1px solid rgba(38, 57, 77,.08);backdrop-filter:blur(12px)}
 .site-header.scrolled{background:rgba(247,245,239,.97);box-shadow:0 8px 30px rgba(38, 57, 77,.08);height:70px}
-.brand-mark{width:40px;height:40px;display:grid;place-items:center;background:#159d94;color:#f7f8f7;font:italic 26px Georgia,serif;border-radius:50%}
+.brand-mark{width:40px;height:40px;display:grid;place-items:center;background:#00AF9A;color:#FBFCFA;font:italic 26px Georgia,serif;border-radius:50%}
 .brand-logo .brand-name,.site-header.scrolled .brand-logo .brand-name{color:#2d3d4c;letter-spacing:.07em;font-size:1.12rem}
-.brand-logo .brand-name .accent{color:#258f87}
+.brand-logo .brand-name .accent{color:#008F80}
 .brand-logo .brand-sub{color:#707d86;font-size:.6rem;letter-spacing:.09em}
-.desktop-nav a{color:#707d86;font-weight:600}.desktop-nav a:hover,.desktop-nav a.active{color:#258f87}
-.site-header.scrolled .desktop-nav a{color:#40566d}
-.site-header.scrolled .desktop-nav a:hover,.site-header.scrolled .desktop-nav a.active{color:#258f87}
-.btn-cta{background:#26394d;color:#fff;border-radius:0;box-shadow:none}.btn-cta:hover{background:#159d94;box-shadow:none}
-.mobile-toggle .bar,.site-header.scrolled .mobile-toggle .bar{background:#26394d}
-.mobile-drawer{background:#f7f8f7}.mobile-drawer .mobile-nav a{color:#26394d}.mobile-drawer .mobile-nav a:hover,.mobile-drawer .mobile-nav a.active{color:#258f87;background:#eef2f1}
+.desktop-nav a{color:#707d86;font-weight:600}.desktop-nav a:hover,.desktop-nav a.active{color:#008F80}
+.site-header.scrolled .desktop-nav a{color:#173D56}
+.site-header.scrolled .desktop-nav a:hover,.site-header.scrolled .desktop-nav a.active{color:#008F80}
+.btn-cta{background:#08263F;color:#fff;border-radius:0;box-shadow:none}.btn-cta:hover{background:#00AF9A;box-shadow:none}
+.mobile-toggle .bar,.site-header.scrolled .mobile-toggle .bar{background:#08263F}
+.mobile-drawer{background:#FBFCFA}.mobile-drawer .mobile-nav a{color:#08263F}.mobile-drawer .mobile-nav a:hover,.mobile-drawer .mobile-nav a.active{color:#008F80;background:#F1F6F4}
 .brand-mark{width:40px;height:40px;display:block;object-fit:contain;flex:none;background:transparent;border:0;border-radius:0}
 .brand-logo .brand-mark{width:54px;height:54px}
 @media(max-width:576px){.brand-logo .brand-mark{width:46px;height:46px}}

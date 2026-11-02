@@ -1,8 +1,8 @@
 @use 'mixins' as *;
 
 .configurator-page-light {
-  background-color: #f7f8f7;
-  color: #40566d;
+  background-color: #FBFCFA;
+  color: #173D56;
   min-height: 100vh;
 }
 
@@ -35,7 +35,7 @@
       font-size: 0.68rem;
       font-weight: 800;
       letter-spacing: 1.5px;
-      color: #258f87;
+      color: #008F80;
       background: rgba(21, 157, 148, 0.08);
       border: 1px solid rgba(21, 157, 148, 0.25);
       padding: 3px 12px;
@@ -46,7 +46,7 @@
     .studio-main-title {
       font-size: clamp(1.4rem, 2.5vw, 1.8rem);
       font-weight: 900;
-      color: #40566d;
+      color: #173D56;
       margin: 0;
       line-height: 1.2;
     }
@@ -61,7 +61,7 @@
     .preset-label {
       font-size: 0.8rem;
       font-weight: 800;
-      color: #40566d;
+      color: #173D56;
       white-space: nowrap;
     }
 
@@ -72,13 +72,13 @@
       flex-wrap: wrap;
 
       .preset-pill {
-        background: #f7f8f7;
+        background: #FBFCFA;
         border: 1px solid rgba(64, 86, 109, 0.12);
         border-radius: var(--radius-full);
         padding: 6px 14px;
         font-size: 0.8rem;
         font-weight: 700;
-        color: #40566d;
+        color: #173D56;
         cursor: pointer;
         display: flex;
         align-items: center;
@@ -86,20 +86,20 @@
         transition: all var(--transition-fast);
 
         svg {
-          color: #258f87;
+          color: #008F80;
           transition: transform var(--transition-fast);
         }
 
         &:hover {
-          background: #eef2f1;
-          border-color: #258f87;
-          color: #258f87;
+          background: #F1F6F4;
+          border-color: #008F80;
+          color: #008F80;
           transform: translateY(-1px);
         }
 
         &.active {
-          background: #159d94;
-          border-color: #258f87;
+          background: #00AF9A;
+          border-color: #008F80;
           color: #FFFFFF;
           box-shadow: 0 4px 12px rgba(21, 157, 148, 0.3);
 
@@ -167,7 +167,7 @@
     font-size: 0.72rem;
     font-weight: 800;
     color: #707d86;
-    background: #f7f8f7;
+    background: #FBFCFA;
     padding: 4px 12px;
     border-radius: var(--radius-full);
     border: 1px solid rgba(64, 86, 109, 0.1);
@@ -190,7 +190,7 @@
     .status-chip {
       font-size: 0.62rem;
       font-weight: 800;
-      color: #258f87;
+      color: #008F80;
       background: rgba(21, 157, 148, 0.12);
       border: 1px solid rgba(21, 157, 148, 0.25);
       padding: 3px 8px;
@@ -200,7 +200,7 @@
       gap: 4px;
 
       &.elevator {
-        color: #35b5aa;
+        color: #32C3B0;
         background: rgba(245, 158, 11, 0.12);
         border-color: rgba(245, 158, 11, 0.25);
       }
@@ -214,7 +214,7 @@
   width: 100%;
   max-width: 420px;
   border-radius: 18px;
-  border: 3px solid #159d94;
+  border: 3px solid #00AF9A;
   padding: 8px;
   display: flex;
   flex-direction: column;
@@ -237,7 +237,7 @@
   position: relative;
   background: #000000;
   border: 1px solid rgba(255, 255, 255, 0.2);
-  border-bottom: 2px solid #159d94;
+  border-bottom: 2px solid #00AF9A;
   border-radius: 8px;
   padding: 6px 10px;
   text-align: center;
@@ -293,7 +293,7 @@
 
   .shelf-bar {
     height: 2.5px;
-    background: linear-gradient(90deg, #707d86, #dce4e5, #FFFFFF, #dce4e5, #707d86);
+    background: linear-gradient(90deg, #707d86, #DCE7E5, #FFFFFF, #DCE7E5, #707d86);
     border-radius: 2px;
     box-shadow: 0 1px 3px rgba(0,0,0,0.5);
   }
@@ -319,7 +319,7 @@
     .item-price {
       font-size: 0.45rem;
       font-weight: 800;
-      color: #79c9c1;
+      color: #79D9CC;
       line-height: 1;
     }
 
@@ -369,7 +369,7 @@
   /* 32" HD Touchscreen Panel */
   .touchscreen-panel {
     background: #000000;
-    border: 2px solid #159d94;
+    border: 2px solid #00AF9A;
     border-radius: 10px;
     padding: 8px 6px;
     display: flex;
@@ -390,7 +390,7 @@
       .screen-brand {
         font-size: 0.5rem;
         font-weight: 900;
-        color: #258f87;
+        color: #008F80;
         letter-spacing: 0.5px;
       }
 
@@ -398,8 +398,8 @@
         width: 6px;
         height: 6px;
         border-radius: 50%;
-        background: #79c9c1;
-        box-shadow: 0 0 6px #79c9c1;
+        background: #79D9CC;
+        box-shadow: 0 0 6px #79D9CC;
       }
     }
 
@@ -423,7 +423,7 @@
       .touch-sub {
         font-size: 0.5rem;
         font-weight: 700;
-        color: #258f87;
+        color: #008F80;
         letter-spacing: 0.5px;
       }
     }
@@ -469,7 +469,7 @@
         span {
           font-size: 0.48rem;
           font-weight: 800;
-          color: #79c9c1;
+          color: #79D9CC;
         }
       }
 
@@ -485,7 +485,7 @@
         .slot-line {
           width: 18px;
           height: 2px;
-          background: #dce4e5;
+          background: #DCE7E5;
           border-radius: 1px;
         }
 
@@ -502,7 +502,7 @@
 /* BOTTOM PRODUCT DISPENSE FLAP DRAWER (SPANS FULL WIDTH) */
 .bottom-dispense-drawer {
   background: linear-gradient(180deg, #2d3d4c 0%, #000000 100%);
-  border: 2px solid #159d94;
+  border: 2px solid #00AF9A;
   border-radius: 10px;
   padding: 8px 12px;
   display: flex;
@@ -514,7 +514,7 @@
   .drawer-handle-bar {
     width: 60px;
     height: 3px;
-    background: linear-gradient(90deg, #707d86, #dce4e5, #707d86);
+    background: linear-gradient(90deg, #707d86, #DCE7E5, #707d86);
     border-radius: 2px;
   }
 
@@ -529,13 +529,13 @@
       font-size: 0.58rem;
       font-weight: 800;
       letter-spacing: 0.5px;
-      color: #dce4e5;
+      color: #DCE7E5;
     }
   }
 }
 
 .pos-chip {
-  color: #79c9c1 !important;
+  color: #79D9CC !important;
   background: rgba(129, 149, 138, 0.15) !important;
   border-color: rgba(129, 149, 138, 0.3) !important;
 }
@@ -562,7 +562,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 6px;
-  background: #eef2f1;
+  background: #F1F6F4;
   padding: 4px;
   border-radius: var(--radius-lg);
 
@@ -583,7 +583,7 @@
       height: 20px;
       border-radius: 50%;
       background: rgba(64, 86, 109, 0.15);
-      color: #40566d;
+      color: #173D56;
       font-size: 0.72rem;
       font-weight: 900;
       @include flex-center;
@@ -606,12 +606,12 @@
       box-shadow: 0 2px 8px rgba(64, 86, 109, 0.08);
 
       .step-num {
-        background: #159d94;
+        background: #00AF9A;
         color: #FFFFFF;
       }
 
       .step-name {
-        color: #40566d;
+        color: #173D56;
         font-weight: 800;
       }
     }
@@ -633,7 +633,7 @@
     .pane-title {
       font-size: 1.1rem;
       font-weight: 800;
-      color: #40566d;
+      color: #173D56;
       margin: 0;
     }
 
@@ -666,7 +666,7 @@
   .size-group-label {
     font-size: 0.8rem;
     font-weight: 700;
-    color: #40566d;
+    color: #173D56;
   }
 
   .size-toggle-grid {
@@ -679,7 +679,7 @@
     }
 
     .size-toggle-btn {
-      background: #f7f8f7;
+      background: #FBFCFA;
       border: 1.5px solid rgba(64, 86, 109, 0.12);
       border-radius: var(--radius-md);
       padding: 10px 12px;
@@ -691,7 +691,7 @@
       transition: all var(--transition-fast);
 
       svg {
-        color: #258f87;
+        color: #008F80;
         flex-shrink: 0;
       }
 
@@ -702,7 +702,7 @@
         .t-main {
           font-size: 0.82rem;
           font-weight: 800;
-          color: #40566d;
+          color: #173D56;
         }
 
         .t-sub {
@@ -712,17 +712,17 @@
       }
 
       &:hover {
-        background: #eef2f1;
-        border-color: #258f87;
+        background: #F1F6F4;
+        border-color: #008F80;
       }
 
       &.active {
-        background: #eef2f1;
-        border-color: #258f87;
+        background: #F1F6F4;
+        border-color: #008F80;
         box-shadow: 0 0 0 2px rgba(21, 157, 148, 0.2);
 
         .btn-text .t-main {
-          color: #258f87;
+          color: #008F80;
         }
       }
     }
@@ -738,15 +738,15 @@
   label {
     font-size: 0.8rem;
     font-weight: 700;
-    color: #40566d;
+    color: #173D56;
   }
 
   .brand-field-light {
-    background: #f7f8f7;
+    background: #FBFCFA;
     border: 1.5px solid rgba(64, 86, 109, 0.15);
     border-radius: var(--radius-md);
     padding: 12px 14px;
-    color: #40566d;
+    color: #173D56;
     font-weight: 800;
     font-size: 0.95rem;
     text-transform: uppercase;
@@ -754,7 +754,7 @@
 
     &:focus {
       outline: none;
-      border-color: #258f87;
+      border-color: #008F80;
       box-shadow: 0 0 0 3px rgba(21, 157, 148, 0.15);
       background: #FFFFFF;
     }
@@ -773,7 +773,7 @@
   gap: 8px;
 
   .count-pill {
-    background: #f7f8f7;
+    background: #FBFCFA;
     border: 1.5px solid rgba(64, 86, 109, 0.12);
     border-radius: var(--radius-md);
     padding: 10px 14px;
@@ -786,7 +786,7 @@
     .c-num {
       font-size: 0.85rem;
       font-weight: 800;
-      color: #40566d;
+      color: #173D56;
     }
 
     .c-sub {
@@ -795,17 +795,17 @@
     }
 
     &:hover {
-      background: #eef2f1;
-      border-color: #258f87;
+      background: #F1F6F4;
+      border-color: #008F80;
     }
 
     &.active {
-      background: #eef2f1;
-      border-color: #258f87;
+      background: #F1F6F4;
+      border-color: #008F80;
       box-shadow: 0 0 0 2px rgba(21, 157, 148, 0.2);
 
       .c-num {
-        color: #258f87;
+        color: #008F80;
       }
     }
   }
@@ -829,7 +829,7 @@
 }
 
 .toggle-btn-light {
-  background: #f7f8f7;
+  background: #FBFCFA;
   border: 1.5px solid rgba(64, 86, 109, 0.1);
   border-radius: var(--radius-md);
   padding: 12px 14px;
@@ -857,7 +857,7 @@
     .t-title {
       font-size: 0.85rem;
       font-weight: 700;
-      color: #40566d;
+      color: #173D56;
     }
 
     .t-sub {
@@ -867,12 +867,12 @@
   }
 
   &.active {
-    background: #eef2f1;
-    border-color: #258f87;
+    background: #F1F6F4;
+    border-color: #008F80;
 
     .check-mark {
-      background: #159d94;
-      border-color: #258f87;
+      background: #00AF9A;
+      border-color: #008F80;
       color: #FFFFFF;
     }
   }
@@ -880,7 +880,7 @@
 
 /* SUMMARY DETAILS STEP 4 */
 .summary-details-box {
-  background: #f7f8f7;
+  background: #FBFCFA;
   border: 1px solid rgba(64, 86, 109, 0.08);
   border-radius: var(--radius-md);
   padding: 1.25rem;
@@ -902,16 +902,16 @@
     .s-val {
       font-size: 0.88rem;
       font-weight: 800;
-      color: #40566d;
+      color: #173D56;
 
       &.brand-val {
-        color: #258f87;
+        color: #008F80;
         letter-spacing: 0.5px;
         text-transform: uppercase;
       }
 
       &.text-green {
-        color: #79c9c1;
+        color: #79D9CC;
       }
     }
   }
@@ -927,7 +927,7 @@
       font-weight: 700;
       background: #FFFFFF;
       border: 1px solid rgba(64, 86, 109, 0.12);
-      color: #40566d;
+      color: #173D56;
       padding: 3px 8px;
       border-radius: 4px;
     }
@@ -950,7 +950,7 @@
 }
 
 .btn-step-next {
-  background: linear-gradient(135deg, #159d94 0%, #159d94 100%);
+  background: linear-gradient(135deg, #00AF9A 0%, #00AF9A 100%);
   color: #FFFFFF;
   border: none;
   border-radius: var(--radius-md);
@@ -971,9 +971,9 @@
 }
 
 .btn-step-prev {
-  background: #f7f8f7;
+  background: #FBFCFA;
   border: 1px solid rgba(64, 86, 109, 0.15);
-  color: #40566d;
+  color: #173D56;
   border-radius: var(--radius-md);
   padding: 12px 18px;
   font-size: 0.88rem;
@@ -985,8 +985,8 @@
   transition: all var(--transition-fast);
 
   &:hover {
-    background: #dce4e5;
-    color: #40566d;
+    background: #DCE7E5;
+    color: #173D56;
   }
 }
 
@@ -996,7 +996,7 @@
   gap: 8px;
 
   .btn-submit-custom-quote {
-    background: linear-gradient(135deg, #159d94 0%, #159d94 100%);
+    background: linear-gradient(135deg, #00AF9A 0%, #00AF9A 100%);
     color: #FFFFFF;
     border-radius: var(--radius-md);
     padding: 14px 20px;
@@ -1024,14 +1024,14 @@
 }
 
 /* A real equipment reference keeps the configurator grounded in available hardware. */
-.product-reference{background:#fff;border:1px solid #dce4e5;border-radius:18px;padding:1rem;box-shadow:0 14px 36px rgba(38,57,77,.06)}
+.product-reference{background:#fff;border:1px solid #DCE7E5;border-radius:18px;padding:1rem;box-shadow:0 14px 36px rgba(38,57,77,.06)}
 .reference-topline{display:flex;justify-content:space-between;gap:1rem;color:#707d86;font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;padding:.2rem .25rem .8rem}
-.reference-photo{height:clamp(300px,43vw,470px);margin:0;display:flex;align-items:center;justify-content:center;background:#eef2f1;border-radius:14px;overflow:hidden}
+.reference-photo{height:clamp(300px,43vw,470px);margin:0;display:flex;align-items:center;justify-content:center;background:#F1F6F4;border-radius:14px;overflow:hidden}
 .reference-photo img{display:block;width:100%;height:100%;object-fit:contain;mix-blend-mode:multiply}
-.reference-brand{display:flex;align-items:center;justify-content:space-between;gap:1rem;margin-top:.85rem;padding:.9rem 1rem;border:1px solid #dce4e5;border-radius:12px;background:#f7f8f7}
-.reference-brand div{display:flex;flex-direction:column;gap:.3rem}.reference-brand div span{font-size:.66rem;color:#707d86;text-transform:uppercase;letter-spacing:.08em}.reference-brand strong{font-size:.86rem;letter-spacing:.08em;color:#26394d}
-.brand-swatch{width:18px;height:18px;border-radius:50%;border:2px solid #fff;box-shadow:0 0 0 1px #c6d0d4}
-.reference-specs{display:flex;flex-wrap:wrap;gap:.45rem;margin-top:.8rem}.reference-specs span{border:1px solid #dce4e5;border-radius:999px;padding:.4rem .7rem;color:#40566d;background:#fff;font-size:.72rem}
+.reference-brand{display:flex;align-items:center;justify-content:space-between;gap:1rem;margin-top:.85rem;padding:.9rem 1rem;border:1px solid #DCE7E5;border-radius:12px;background:#FBFCFA}
+.reference-brand div{display:flex;flex-direction:column;gap:.3rem}.reference-brand div span{font-size:.66rem;color:#707d86;text-transform:uppercase;letter-spacing:.08em}.reference-brand strong{font-size:.86rem;letter-spacing:.08em;color:#08263F}
+.brand-swatch{width:18px;height:18px;border-radius:50%;border:2px solid #fff;box-shadow:0 0 0 1px #C5D4D5}
+.reference-specs{display:flex;flex-wrap:wrap;gap:.45rem;margin-top:.8rem}.reference-specs span{border:1px solid #DCE7E5;border-radius:999px;padding:.4rem .7rem;color:#173D56;background:#fff;font-size:.72rem}
 .reference-note{margin:.8rem .2rem .1rem;color:#707d86;font-size:.74rem;line-height:1.6}
 @media(max-width:600px){.reference-photo{height:340px}.reference-topline{font-size:.62rem}}
 

@@ -13,7 +13,7 @@
   .contact-badge {
     display: inline-block;
     background: rgba(21, 157, 148, 0.15);
-    color: #258f87;
+    color: #008F80;
     border: 1px solid rgba(21, 157, 148, 0.3);
     padding: 5px 14px;
     border-radius: var(--radius-full);
@@ -145,7 +145,7 @@
   }
 
   &:focus {
-    border-color: #258f87;
+    border-color: #008F80;
     background: #FFF;
   }
 }
@@ -159,15 +159,15 @@
   word-break: break-word;
 
   &.success {
-    background: #eef2f1;
+    background: #F1F6F4;
     color: var(--color-success);
-    border: 1px solid #dfe7e6;
+    border: 1px solid #E1EBE8;
   }
 
   &.error {
-    background: #eef2f1;
-    color: #258f87;
-    border: 1px solid #dfe7e6;
+    background: #F1F6F4;
+    color: #008F80;
+    border: 1px solid #E1EBE8;
   }
 }
 
@@ -207,7 +207,7 @@
   }
 
   h3 {
-    color: #258f87;
+    color: #008F80;
     font-size: 1.35rem;
     margin-bottom: 4px;
 
@@ -248,7 +248,7 @@
       display: flex;
       align-items: center;
       gap: 8px;
-      color: #258f87;
+      color: #008F80;
       margin-bottom: 4px;
 
       strong {
@@ -272,7 +272,7 @@
 
     .info-link {
       font-size: 0.92rem;
-      color: #258f87;
+      color: #008F80;
       padding-left: 26px;
       word-break: break-all;
       transition: color var(--transition-fast);
@@ -333,10 +333,10 @@
       &.linkedin {
         background: rgba(10, 106, 194, 0.2);
         border: 1px solid rgba(10, 106, 194, 0.5);
-        color: #258f87;
+        color: #008F80;
 
         &:hover {
-          background: #159d94;
+          background: #00AF9A;
           color: #FFF;
         }
       }
@@ -344,10 +344,10 @@
       &.facebook {
         background: rgba(21, 157, 148, 0.2);
         border: 1px solid rgba(21, 157, 148, 0.5);
-        color: #258f87;
+        color: #008F80;
 
         &:hover {
-          background: #159d94;
+          background: #00AF9A;
           color: #FFF;
         }
       }
@@ -355,10 +355,10 @@
       &.instagram {
         background: rgba(129, 149, 138, 0.2);
         border: 1px solid rgba(129, 149, 138, 0.5);
-        color: #79c9c1;
+        color: #79D9CC;
 
         &:hover {
-          background: linear-gradient(45deg, #159d94 0%, #35b5aa 25%, #35b5aa 50%, #35b5aa 75%, #117b75 100%);
+          background: linear-gradient(45deg, #00AF9A 0%, #32C3B0 25%, #32C3B0 50%, #32C3B0 75%, #007D70 100%);
           color: #FFF;
           border-color: transparent;
         }
@@ -366,5 +366,5 @@
     }
   }
 }
-.social-channels .social-btns .social-link.linkedin,.social-channels .social-btns .social-link.facebook,.social-channels .social-btns .social-link.instagram{background:rgba(21, 157, 148,.1);border-color:rgba(21, 157, 148,.28);color:#79c9c1}
-.social-channels .social-btns .social-link.linkedin:hover,.social-channels .social-btns .social-link.facebook:hover,.social-channels .social-btns .social-link.instagram:hover{background:#159d94;border-color:#258f87;color:#f7f8f7;box-shadow:none}
+.social-channels .social-btns .social-link.linkedin,.social-channels .social-btns .social-link.facebook,.social-channels .social-btns .social-link.instagram{background:rgba(21, 157, 148,.1);border-color:rgba(21, 157, 148,.28);color:#79D9CC}
+.social-channels .social-btns .social-link.linkedin:hover,.social-channels .social-btns .social-link.facebook:hover,.social-channels .social-btns .social-link.instagram:hover{background:#00AF9A;border-color:#008F80;color:#FBFCFA;box-shadow:none}

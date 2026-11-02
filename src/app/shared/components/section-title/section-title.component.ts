@@ -56,9 +56,9 @@ import { CommonModule } from '@angular/common';
         }
 
         .section-badge {
-          background: rgba(63, 98, 84, 0.15);
+          background: rgba(0, 143, 128, 0.15);
           color: var(--color-accent-muted);
-          border-color: rgba(63, 98, 84, 0.3);
+          border-color: rgba(0, 143, 128, 0.3);
         }
       }
     }
@@ -121,7 +121,7 @@ import { CommonModule } from '@angular/common';
       background: linear-gradient(90deg, var(--color-accent-primary) 0%, var(--color-accent-muted) 100%);
       border-radius: var(--radius-full);
       transition: width 0.9s cubic-bezier(0.16, 1, 0.3, 1);
-      box-shadow: 0 0 10px rgba(63, 98, 84, 0.5);
+      box-shadow: 0 0 10px rgba(0, 143, 128, 0.5);
 
       .glow-head {
         position: absolute;
@@ -149,16 +149,16 @@ import { CommonModule } from '@angular/common';
     }
 
     .section-header { margin-bottom: clamp(1.75rem, 3vw, 2.5rem); }
-    .section-title { font-family: Georgia, 'Times New Roman', serif; font-size: clamp(2rem, 4vw, 3.2rem); font-weight: 400; color: #26394d; line-height: 1.06; letter-spacing: -0.035em; }
+    .section-title { font-family: Georgia, 'Times New Roman', serif; font-size: clamp(2rem, 4vw, 3.2rem); font-weight: 400; color: #08263F; line-height: 1.06; letter-spacing: -0.035em; }
     .section-subtitle { max-width: 600px; color: #707873; line-height: 1.75; }
-    .section-badge { display: inline-block; padding: 0 0 7px; border: 0; border-bottom: 1px solid #a9bdc4; border-radius: 0; background: transparent; box-shadow: none; color: #258f87; font-size: .7rem; letter-spacing: .16em; }
+    .section-badge { display: inline-block; padding: 0 0 7px; border: 0; border-bottom: 1px solid #a9bdc4; border-radius: 0; background: transparent; box-shadow: none; color: #008F80; font-size: .7rem; letter-spacing: .16em; }
     .badge-icon { display: none; }
     .title-underline-track { width: 50px; height: 1px; background: #dce4e5; border-radius: 0; margin-top: 15px; }
-    .title-underline-fill { width: 38px; background: #159d94; box-shadow: none; border-radius: 0; }
+    .title-underline-fill { width: 38px; background: #00AF9A; box-shadow: none; border-radius: 0; }
     .glow-head { display: none; }
     .section-header.dark .section-title { color: #f7f8f7; }
     .section-header.dark .section-subtitle { color: #c4cdc7; }
-    .section-header.dark .section-badge { color: #79c9c1; border-color: #526777; }
+    .section-header.dark .section-badge { color: #79D9CC; border-color: #496779; }
   `]
 })
 export class SectionTitleComponent implements AfterViewInit, OnDestroy {

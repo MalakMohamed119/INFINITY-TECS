@@ -1,7 +1,7 @@
 @use 'mixins' as *;
 
 .page-header-banner {
-  background: linear-gradient(150deg, #26394d 0%, #26394d 50%, #40566d 100%);
+  background: linear-gradient(150deg, #08263F 0%, #08263F 50%, #173D56 100%);
   padding: 3.5rem 0 3rem;
   text-align: center;
   position: relative;
@@ -29,7 +29,7 @@
     align-items: center;
     gap: 8px;
     background: rgba(21, 157, 148, 0.12);
-    color: #258f87;
+    color: #008F80;
     border: 1px solid rgba(21, 157, 148, 0.3);
     padding: 6px 18px;
     border-radius: 30px;
@@ -82,7 +82,7 @@
     }
 
     .hstat-label {
-      color: #258f87;
+      color: #008F80;
       font-size: 0.78rem;
       font-weight: 600;
       text-transform: uppercase;
@@ -137,10 +137,10 @@
 
       .header-icon-box {
         transform: scale(1.08) translateY(-2px);
-        background: linear-gradient(135deg, #159d94 0%, #159d94 100%);
+        background: linear-gradient(135deg, #00AF9A 0%, #00AF9A 100%);
         color: #FFFFFF;
         box-shadow: 0 10px 25px rgba(21, 157, 148, 0.45);
-        border-color: #117b75;
+        border-color: #007D70;
       }
 
       .count-badge {
@@ -163,7 +163,7 @@
 
 .pro-card-header {
   position: relative;
-  background: linear-gradient(145deg, #26394d 0%, #40566d 60%, #40566d 100%);
+  background: linear-gradient(145deg, #08263F 0%, #173D56 60%, #173D56 100%);
   padding: 1.85rem 2rem 1.6rem;
   display: flex;
   align-items: center;
@@ -191,7 +191,7 @@
     border-radius: 16px;
     background: linear-gradient(135deg, rgba(21, 157, 148, 0.2) 0%, rgba(21, 157, 148, 0.35) 100%);
     border: 1px solid rgba(21, 157, 148, 0.45);
-    color: #117b75;
+    color: #007D70;
     box-shadow: 0 8px 24px rgba(21, 157, 148, 0.22), inset 0 1px 1px rgba(255, 255, 255, 0.25);
     backdrop-filter: blur(8px);
     @include flex-center;
@@ -225,8 +225,8 @@
         width: 6px;
         height: 6px;
         border-radius: 50%;
-        background: #117b75;
-        box-shadow: 0 0 8px #117b75;
+        background: #007D70;
+        box-shadow: 0 0 8px #007D70;
       }
     }
 
@@ -245,7 +245,7 @@
       backdrop-filter: blur(4px);
 
       svg {
-        color: #117b75;
+        color: #007D70;
       }
     }
   }
@@ -293,7 +293,7 @@
     color: var(--color-primary-dark);
 
     svg {
-      color: #79c9c1;
+      color: #79D9CC;
       flex-shrink: 0;
     }
   }
@@ -389,10 +389,10 @@
 
 
 /* Raise category icons above the dark card header for clear contrast. */
-.pro-card-header .header-icon-box{color:#eef2f1;background:rgba(230,238,233,.12);border-color:rgba(230,238,233,.32);box-shadow:0 8px 22px rgba(0,0,0,.12),inset 0 1px 1px rgba(255,255,255,.12)}
+.pro-card-header .header-icon-box{color:#F1F6F4;background:rgba(230,238,233,.12);border-color:rgba(230,238,233,.32);box-shadow:0 8px 22px rgba(0,0,0,.12),inset 0 1px 1px rgba(255,255,255,.12)}
 .pro-card-header .header-icon-box svg{stroke:currentColor}
 .pro-cat-card:hover .pro-card-header .header-icon-box{color:#fff;background:rgba(230,238,233,.18);border-color:rgba(230,238,233,.48)}
 
 /* Bright, readable labels on the dark catalog banner. */
-.page-header-banner .header-badge{color:#f7f8f7}
-.catalog-header-stats .hstat-item .hstat-label{color:#dce4e5}
+.page-header-banner .header-badge{color:#FBFCFA}
+.catalog-header-stats .hstat-item .hstat-label{color:#DCE7E5}

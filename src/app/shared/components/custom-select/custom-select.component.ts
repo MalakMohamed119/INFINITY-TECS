@@ -99,14 +99,14 @@ export interface SelectOption {
       transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
 
       &:hover {
-        border-color: #258f87;
-        box-shadow: 0 6px 20px rgba(63, 98, 84, 0.14);
+        border-color: #008F80;
+        box-shadow: 0 6px 20px rgba(0, 143, 128, 0.14);
         transform: translateY(-1px);
       }
 
       .open & {
-        border-color: #258f87;
-        box-shadow: 0 0 0 4px rgba(63, 98, 84, 0.2), 0 8px 24px rgba(63, 98, 84, 0.15);
+        border-color: #008F80;
+        box-shadow: 0 0 0 4px rgba(0, 143, 128, 0.2), 0 8px 24px rgba(0, 143, 128, 0.15);
       }
     }
 
@@ -114,7 +114,7 @@ export interface SelectOption {
       font-family: var(--font-family-body, inherit);
       font-size: 0.95rem;
       font-weight: 600;
-      color: var(--color-primary-dark, #26394d);
+      color: var(--color-primary-dark, #08263F);
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
@@ -129,7 +129,7 @@ export interface SelectOption {
       display: flex;
       align-items: center;
       justify-content: center;
-      color: #258f87;
+      color: #008F80;
       transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
       flex-shrink: 0;
 
@@ -149,7 +149,7 @@ export interface SelectOption {
       border: 1.5px solid #dce4e5;
       border-radius: 18px;
       padding: 8px;
-      box-shadow: 0 14px 36px rgba(42, 41, 46, 0.16), 0 4px 14px rgba(63, 98, 84, 0.08);
+      box-shadow: 0 14px 36px rgba(42, 41, 46, 0.16), 0 4px 14px rgba(0, 143, 128, 0.08);
       overflow: hidden;
       animation: menuFadeIn 0.25s cubic-bezier(0.16, 1, 0.3, 1);
     }
@@ -168,7 +168,7 @@ export interface SelectOption {
         height: 0px;
       }
       &::-webkit-scrollbar-thumb {
-        background: var(--color-accent-primary, #159d94);
+        background: var(--color-accent-primary, #00AF9A);
         border-radius: 10px;
       }
     }
@@ -191,12 +191,12 @@ export interface SelectOption {
 
       &:hover {
         background: #eef2f1;
-        color: #258f87;
+        color: #008F80;
       }
 
       &.selected {
         background: #eef2f1;
-        color: #35b5aa;
+        color: #32C3B0;
         font-weight: 700;
         border: 1px solid rgba(85, 119, 102, 0.3);
       }
@@ -215,13 +215,13 @@ export interface SelectOption {
 
     .option-sub {
       font-size: 0.76rem;
-      color: #35b5aa;
+      color: #32C3B0;
       font-weight: 600;
       margin-top: 2px;
     }
 
     .check-icon {
-      stroke: #35b5aa;
+      stroke: #32C3B0;
       flex-shrink: 0;
     }
 

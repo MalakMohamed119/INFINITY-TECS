@@ -1,6 +1,6 @@
 @use 'mixins' as *;
 
-.brand-mark{width:42px;height:42px;display:grid;place-items:center;background:#159d94;color:#f7f8f7;font:italic 27px Georgia,serif;border-radius:50%;flex:none}
+.brand-mark{width:42px;height:42px;display:grid;place-items:center;background:#00AF9A;color:#FBFCFA;font:italic 27px Georgia,serif;border-radius:50%;flex:none}
 
 .site-footer {
   background: var(--color-surface-dark);
@@ -63,7 +63,7 @@
       white-space: nowrap;
 
       .accent {
-        color: #258f87;
+        color: #008F80;
       }
     }
 
@@ -125,10 +125,10 @@
     &.linkedin {
       background: rgba(21, 157, 148, 0.15);
       border: 1px solid rgba(21, 157, 148, 0.4);
-      color: #258f87;
+      color: #008F80;
 
       &:hover {
-        background: #159d94;
+        background: #00AF9A;
         color: #FFF;
       }
     }
@@ -136,10 +136,10 @@
     &.facebook {
       background: rgba(21, 157, 148, 0.15);
       border: 1px solid rgba(21, 157, 148, 0.4);
-      color: #258f87;
+      color: #008F80;
 
       &:hover {
-        background: #159d94;
+        background: #00AF9A;
         color: #FFF;
       }
     }
@@ -147,10 +147,10 @@
     &.instagram {
       background: rgba(129, 149, 138, 0.15);
       border: 1px solid rgba(129, 149, 138, 0.4);
-      color: #79c9c1;
+      color: #79D9CC;
 
       &:hover {
-        background: linear-gradient(45deg, #159d94 0%, #35b5aa 25%, #35b5aa 50%, #35b5aa 75%, #117b75 100%);
+        background: linear-gradient(45deg, #00AF9A 0%, #32C3B0 25%, #32C3B0 50%, #32C3B0 75%, #007D70 100%);
         color: #FFF;
         border-color: transparent;
       }
@@ -166,7 +166,7 @@
   display: flex;
   align-items: center;
   gap: 12px;
-  color: #258f87;
+  color: #008F80;
   transition: all var(--transition-fast);
   width: 100%;
   max-width: 100%;
@@ -174,7 +174,7 @@
 
   &:hover {
     background: rgba(21, 157, 148, 0.2);
-    border-color: #258f87;
+    border-color: #008F80;
     box-shadow: var(--shadow-glow);
   }
 
@@ -193,7 +193,7 @@
 
     .badge-sub {
       font-size: 0.75rem;
-      color: #258f87;
+      color: #008F80;
       word-break: break-word;
     }
   }
@@ -246,7 +246,7 @@
     word-break: break-word;
 
     &:hover {
-      color: #258f87;
+      color: #008F80;
       transform: translateX(4px);
     }
   }
@@ -269,7 +269,7 @@
     overflow-wrap: anywhere;
 
     svg {
-      color: #258f87;
+      color: #008F80;
       flex-shrink: 0;
       margin-top: 3px;
     }
@@ -280,7 +280,7 @@
       word-break: break-all;
 
       &:hover {
-        color: #258f87;
+        color: #008F80;
       }
     }
   }
@@ -318,12 +318,12 @@
 
     a {
       color: var(--color-text-muted-dark);
-      &:hover { color: #258f87; }
+      &:hover { color: #008F80; }
     }
   }
 }
-.social-links-row .social-btn.linkedin,.social-links-row .social-btn.facebook,.social-links-row .social-btn.instagram{background:rgba(21, 157, 148,.1);border-color:rgba(21, 157, 148,.28);color:#79c9c1}
-.social-links-row .social-btn.linkedin:hover,.social-links-row .social-btn.facebook:hover,.social-links-row .social-btn.instagram:hover{background:#159d94;border-color:#258f87;color:#f7f8f7;box-shadow:none}
+.social-links-row .social-btn.linkedin,.social-links-row .social-btn.facebook,.social-links-row .social-btn.instagram{background:rgba(21, 157, 148,.1);border-color:rgba(21, 157, 148,.28);color:#79D9CC}
+.social-links-row .social-btn.linkedin:hover,.social-links-row .social-btn.facebook:hover,.social-links-row .social-btn.instagram:hover{background:#00AF9A;border-color:#008F80;color:#FBFCFA;box-shadow:none}
 .footer-logo .brand-mark{width:42px;height:42px;display:block;object-fit:contain;flex:none;background:transparent;border:0;border-radius:0}
 .footer-logo .brand-mark{width:56px;height:56px}
 .footer-logo .brand-name,.footer-logo .brand-name .accent{color:#fff!important;font-size:1rem;font-weight:600;letter-spacing:.06em}

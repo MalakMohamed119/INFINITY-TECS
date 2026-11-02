@@ -8,7 +8,7 @@
 }
 
 .vendplace-card {
-  background: linear-gradient(155deg, #40566d 0%, #26394d 100%);
+  background: linear-gradient(155deg, #173D56 0%, #08263F 100%);
   border: 1px solid rgba(21, 157, 148, 0.35);
   border-radius: var(--radius-lg);
   padding: 1.75rem;
@@ -74,7 +74,7 @@ h2 {
   transition: transform var(--transition-fast), border-color var(--transition-fast);
 
   svg {
-    color: #258f87;
+    color: #008F80;
     margin-bottom: var(--spacing-sm);
   }
 
@@ -93,7 +93,7 @@ h2 {
 
   &:hover {
     transform: translateY(-4px);
-    border-color: #258f87;
+    border-color: #008F80;
   }
 }
 
@@ -128,13 +128,13 @@ h2 {
 .portal-url-label {
   font-family: monospace;
   font-size: 0.9rem;
-  color: #258f87;
+  color: #008F80;
   background: rgba(21, 157, 148, 0.1);
   padding: 6px 14px;
   border-radius: var(--radius-sm);
 }
 
 /* Brighten accent details against VendPlace's dark panels. */
-.vendplace-card .card-badge{color:#f7f8f7}
-.vendplace-card .feat-box svg{color:#dce4e5}
-.vendplace-card .portal-url-label{color:#dce4e5}
+.vendplace-card .card-badge{color:#FBFCFA}
+.vendplace-card .feat-box svg{color:#DCE7E5}
+.vendplace-card .portal-url-label{color:#DCE7E5}

@@ -2,7 +2,7 @@
 
 .cta-banner {
   padding: var(--spacing-3xl) 0;
-  background: linear-gradient(135deg, var(--color-primary-dark) 0%, #26394d 100%);
+  background: linear-gradient(135deg, var(--color-primary-dark) 0%, #08263F 100%);
   border-top: 1px solid var(--color-border-dark);
   position: relative;
   overflow: hidden;
@@ -69,10 +69,10 @@
   box-sizing: border-box;
 }
 
-.cta-banner{background:#26394d;border:0}.cta-banner::before{display:none}.cta-content h2{color:#f7f8f7}.cta-content p{color:#c6d0d4}
-.btn-cta-gold,.btn-teaser-glow{border-radius:0;background:#159d94;box-shadow:none}.btn-cta-gold:hover,.btn-teaser-glow:hover{background:#117b75;box-shadow:none}
-.btn-cta-outline{border-radius:0;border-color:#35a99e;color:#f7f8f7}.btn-cta-outline:hover{background:#40566d;border-color:#c6d0d4}
-.customize-teaser-banner{background:#eef2f1}.teaser-card{border-radius:2px;background:#40566d;border:0;box-shadow:none}.teaser-card .teaser-glow{display:none}.teaser-content .teaser-badge{color:#79c9c1}.teaser-content .teaser-title{color:#f7f8f7}.teaser-content .teaser-desc{color:#c6d0d4}.teaser-content .teaser-tags .t-pill{border-radius:2px;background:rgba(255,255,255,.07)}
+.cta-banner{background:#08263F;border:0}.cta-banner::before{display:none}.cta-content h2{color:#FBFCFA}.cta-content p{color:#C5D4D5}
+.btn-cta-gold,.btn-teaser-glow{border-radius:0;background:#00AF9A;box-shadow:none}.btn-cta-gold:hover,.btn-teaser-glow:hover{background:#007D70;box-shadow:none}
+.btn-cta-outline{border-radius:0;border-color:#00AF9A;color:#FBFCFA}.btn-cta-outline:hover{background:#173D56;border-color:#C5D4D5}
+.customize-teaser-banner{background:#F1F6F4}.teaser-card{border-radius:2px;background:#173D56;border:0;box-shadow:none}.teaser-card .teaser-glow{display:none}.teaser-content .teaser-badge{color:#79D9CC}.teaser-content .teaser-title{color:#FBFCFA}.teaser-content .teaser-desc{color:#C5D4D5}.teaser-content .teaser-tags .t-pill{border-radius:2px;background:rgba(255,255,255,.07)}
 
 .btn-cta-gold {
   background: linear-gradient(135deg, var(--color-accent-primary) 0%, var(--color-accent-secondary) 100%);
@@ -96,7 +96,7 @@
 
   &:hover {
     background: rgba(21, 157, 148, 0.12);
-    border-color: #258f87;
+    border-color: #008F80;
     color: var(--color-cream-light);
   }
 }
@@ -144,7 +144,7 @@
     font-size: 0.7rem;
     font-weight: 800;
     letter-spacing: 1px;
-    color: #258f87;
+    color: #008F80;
     margin-bottom: 8px;
     display: inline-block;
   }
@@ -211,11 +211,11 @@
 .teaser-card{padding:clamp(1.5rem,4vw,3rem)}.teaser-content .teaser-title{font-family:Georgia,'Times New Roman',serif;font-weight:400;font-size:clamp(1.6rem,3vw,2.3rem);letter-spacing:-.025em}.teaser-content .teaser-desc{line-height:1.75}.teaser-content .teaser-tags .t-pill{border-radius:0;font-size:.72rem;font-weight:500}.btn-teaser-glow{border-radius:0;font-weight:600}
 
 /* Real product photography and restrained, consistent surfaces for the setup teaser. */
-.customize-teaser-banner{padding:clamp(2.5rem,6vw,5rem) 0;background:#eef2f1}
-.teaser-card{display:grid;grid-template-columns:1.05fr .95fr;align-items:stretch;gap:clamp(1.5rem,4vw,3.5rem);padding:clamp(1.4rem,4vw,3rem);background:#fff;border:1px solid #dce4e5;box-shadow:0 16px 42px rgba(38,57,77,.06)}
-.teaser-content{align-self:center}.teaser-content .teaser-badge{color:#258f87;letter-spacing:.13em}.teaser-content .teaser-title{color:#26394d}.teaser-content .teaser-desc{color:#62717c;line-height:1.8}.teaser-points{display:grid;gap:.55rem;padding:0;margin:1.2rem 0 1.5rem;list-style:none}.teaser-points li{position:relative;padding-left:1.15rem;color:#40566d;font-size:.88rem}.teaser-points li::before{content:'';position:absolute;left:0;top:.56em;width:6px;height:6px;border-radius:50%;background:#35b5aa}
-.teaser-visual{position:relative;min-height:350px;margin:0;display:flex;align-items:center;justify-content:center;background:#eef2f1;border-radius:14px;overflow:hidden}.teaser-visual img{width:100%;height:100%;max-height:470px;object-fit:contain;mix-blend-mode:multiply}.teaser-visual figcaption{position:absolute;left:1rem;right:1rem;bottom:1rem;display:flex;justify-content:space-between;align-items:center;gap:1rem;padding:.8rem 1rem;background:rgba(255,255,255,.95);border:1px solid #dce4e5;border-radius:10px;color:#707d86;font-size:.72rem}.teaser-visual figcaption strong{color:#26394d;font-weight:600}
-.btn-teaser-glow{display:inline-flex;align-items:center;gap:.75rem;border:1px solid #159d94;border-radius:999px;background:#159d94;color:#fff;padding:.85rem 1.2rem;font-weight:600;text-decoration:none;transition:background .2s,color .2s}.btn-teaser-glow:hover{background:#eef2f1;color:#26394d}
+.customize-teaser-banner{padding:clamp(2.5rem,6vw,5rem) 0;background:#F1F6F4}
+.teaser-card{display:grid;grid-template-columns:1.05fr .95fr;align-items:stretch;gap:clamp(1.5rem,4vw,3.5rem);padding:clamp(1.4rem,4vw,3rem);background:#fff;border:1px solid #DCE7E5;box-shadow:0 16px 42px rgba(38,57,77,.06)}
+.teaser-content{align-self:center}.teaser-content .teaser-badge{color:#008F80;letter-spacing:.13em}.teaser-content .teaser-title{color:#08263F}.teaser-content .teaser-desc{color:#62717c;line-height:1.8}.teaser-points{display:grid;gap:.55rem;padding:0;margin:1.2rem 0 1.5rem;list-style:none}.teaser-points li{position:relative;padding-left:1.15rem;color:#173D56;font-size:.88rem}.teaser-points li::before{content:'';position:absolute;left:0;top:.56em;width:6px;height:6px;border-radius:50%;background:#32C3B0}
+.teaser-visual{position:relative;min-height:350px;margin:0;display:flex;align-items:center;justify-content:center;background:#F1F6F4;border-radius:14px;overflow:hidden}.teaser-visual img{width:100%;height:100%;max-height:470px;object-fit:contain;mix-blend-mode:multiply}.teaser-visual figcaption{position:absolute;left:1rem;right:1rem;bottom:1rem;display:flex;justify-content:space-between;align-items:center;gap:1rem;padding:.8rem 1rem;background:rgba(255,255,255,.95);border:1px solid #DCE7E5;border-radius:10px;color:#707d86;font-size:.72rem}.teaser-visual figcaption strong{color:#08263F;font-weight:600}
+.btn-teaser-glow{display:inline-flex;align-items:center;gap:.75rem;border:1px solid #00AF9A;border-radius:999px;background:#00AF9A;color:#fff;padding:.85rem 1.2rem;font-weight:600;text-decoration:none;transition:background .2s,color .2s}.btn-teaser-glow:hover{background:#F1F6F4;color:#08263F}
 @media(max-width:760px){.teaser-card{grid-template-columns:1fr}.teaser-visual{min-height:300px}}
 
 /* Scale the setup reference back so it reads as product photography, not a close-up. */

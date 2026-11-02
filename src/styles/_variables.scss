@@ -1,37 +1,37 @@
 /* ========================================================================== 
    Design Tokens & CSS Custom Properties for Infinity Tecs
-   VendPlace inspired palette: slate blue, turquoise and soft white
+   VendPlace brand palette: deep navy, turquoise and soft white
    ========================================================================== */
 
 :root {
-  /* Brand palette sampled from the VendPlace mark */
-  --color-primary-dark: #26394d;
-  --color-primary-mid: #40566d;
-  --color-primary-light: #657b8f;
+  /* Brand colors sampled from the VendPlace mark */
+  --color-primary-dark: #08263F;
+  --color-primary-mid: #173D56;
+  --color-primary-light: #496779;
 
-  --color-cream-light: #f7f8f7;
-  --color-cream-mid: #eef2f1;
-  --color-cream-dark: #dfe7e6;
+  --color-cream-light: #FBFCFA;
+  --color-cream-mid: #F1F6F4;
+  --color-cream-dark: #E1EBE8;
 
-  --color-accent-primary: #159d94;
-  --color-accent-secondary: #35b5aa;
-  --color-accent-muted: #79c9c1;
-  --color-accent-hover: #117b75;
+  --color-accent-primary: #00AF9A;
+  --color-accent-secondary: #32C3B0;
+  --color-accent-muted: #79D9CC;
+  --color-accent-hover: #007D70;
 
-  --color-surface-dark: #26394d;
+  --color-surface-dark: #08263F;
   --color-surface-card: #ffffff;
-  --color-surface-card-dark: #40566d;
+  --color-surface-card-dark: #173D56;
 
-  --color-text-main: #2d3d4c;
-  --color-text-light: #f7f8f7;
+  --color-text-main: #08263F;
+  --color-text-light: #FBFCFA;
   --color-text-muted: #707d86;
-  --color-text-muted-dark: #c6d0d4;
+  --color-text-muted-dark: #C5D4D5;
 
-  --color-border: #dce4e5;
-  --color-border-dark: #526777;
+  --color-border: #DCE7E5;
+  --color-border-dark: #496779;
 
-  --color-success: #35a99e;
-  --color-info: #159d94;
+  --color-success: #00AF9A;
+  --color-info: #00AF9A;
 
   /* Typography */
   --font-family-heading: 'DM Sans', 'Avenir Next', Arial, sans-serif;
