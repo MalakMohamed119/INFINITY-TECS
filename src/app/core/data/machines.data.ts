@@ -290,12 +290,12 @@ export const MACHINES_DATA: Machine[] = [
   },
   {
     id: 'rhtt10-pro',
-    name: 'rhTT10.pro',
+    name: 'rhTT10',
     category: 'coffee',
     subCategory: 'rhTT',
     tagline: 'High-end touchscreen tabletop espresso vendor with fresh milk module',
     shortDescription: 'Flagship rhTT tabletop coffee engine featuring interactive touch screen UI, Varitherm induction heating, and fresh milk compatibility.',
-    fullDescription: 'The rhTT10.pro represents the top-of-the-line tabletop coffee machine in the Rhea TT line. Designed for executive offices, high-end lounges, and premium hotel breakfast stations, it combines Varitherm induction heating precision, Variflex brewing technology, and seamless fresh milk integration for espresso drinks.',
+    fullDescription: 'The rhTT10 represents the top-of-the-line tabletop coffee machine in the Rhea TT line. Designed for executive offices, high-end lounges, and premium hotel breakfast stations, it combines Varitherm induction heating precision, Variflex brewing technology, and seamless fresh milk integration for espresso drinks.',
     images: ['assets/images/machines/coffee/rhtt10.png'],
     featured: false,
     specs: [
