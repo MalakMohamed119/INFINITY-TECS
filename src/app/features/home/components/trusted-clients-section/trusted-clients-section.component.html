@@ -7,7 +7,11 @@
       [centered]="true"
     ></app-section-title>
     <div class="partner-grid" aria-label="Infinity Tecs partners">
-      <div class="partner-logo-tile" *ngFor="let client of clients" [class.dark-logo]="client.name === 'JW Marriott' || client.name === 'The Address'">
+      <div
+        class="partner-logo-tile"
+        *ngFor="let client of clients"
+        [class.dark-logo]="['JW Marriott', 'Standard Chartered'].includes(client.name)"
+      >
         <img [src]="client.logo" [alt]="client.name" class="client-logo-img" loading="lazy" />
       </div>
     </div>

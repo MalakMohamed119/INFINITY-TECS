@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1107 415" role="img" aria-labelledby="title desc">
+  <title id="title">HESCO</title>
+  <desc id="desc">Your construction partner</desc>
+  <path d="M0 0H278L0 280Z" fill="#155B83"/>
+  <text x="333" y="243" font-family="Arial, Helvetica, sans-serif" font-size="140" font-weight="400" letter-spacing="-2">
+    <tspan fill="#17608D">H</tspan><tspan x="458" fill="#62646A">esco</tspan>
+  </text>
+  <text x="333" y="280" fill="#77797C" font-family="Arial, Helvetica, sans-serif" font-size="31" font-weight="300" letter-spacing=".15">YOUR CONSTRUCTION PARTNER</text>
+  <path d="M333 297H842" stroke="#17608D" stroke-width="3"/>
+  <text x="333" y="350" fill="#62646A" font-family="Arial, Helvetica, sans-serif" font-size="48" font-weight="700" letter-spacing="1">COMPANY PROFILE</text>
+</svg>

@@ -16,18 +16,25 @@ export interface ClientPartner {
 })
 export class TrustedClientsSectionComponent {
   clients: ClientPartner[] = [
+    { name: 'JW Marriott', logo: 'assets/images/clients/jw-marriott.png' },
     { name: 'Sutherland', logo: 'assets/images/clients/sutherland.png' },
     { name: 'Nestle', logo: 'assets/images/clients/nestle.png' },
     { name: 'Ahram', logo: 'assets/images/clients/ahram.png' },
+    { name: 'Standard Chartered', logo: 'assets/images/clients/standard-chartered.png' },
     { name: 'Transmar', logo: 'assets/images/clients/transmar.png' },
-    { name: 'Intelcia', logo: 'assets/images/clients/intelcia.png' },
-    { name: 'The Address', logo: 'assets/images/clients/the-address.png' },
-    { name: 'Dallmayr', logo: 'assets/images/clients/dallmayr.png' },
-    { name: 'Dahab Masr', logo: 'assets/images/clients/dahab-masr.png' },
-    { name: 'Arqam Capital', logo: 'assets/images/clients/arqam-capital.png' },
-    { name: 'JW Marriott', logo: 'assets/images/clients/jw-marriott.png' },
+    { name: 'Capgemini', logo: 'assets/images/clients/capgemini.svg' },
     { name: 'Crimson', logo: 'assets/images/clients/crimson.png' },
-    { name: 'Standard Chartered', logo: 'assets/images/clients/standard-chartered.png' }
+    { name: 'Intelcia', logo: 'assets/images/clients/intelcia.png' },
+    { name: 'Dallmayr', logo: 'assets/images/clients/dallmayr.png' },
+    { name: 'The Address', logo: 'assets/images/clients/the-address.png' },
+    { name: 'Amazon', logo: 'assets/images/clients/amazon.webp' },
+    { name: 'HESCO', logo: 'assets/images/clients/hesco.svg' },
+    { name: 'Dahab Masr', logo: 'assets/images/clients/dahab-masr.png?v=2' },
+    { name: 'Giza Systems', logo: 'assets/images/clients/giza-systems.svg' },
+    { name: 'Arqam Capital', logo: 'assets/images/clients/arqam-capital.png' },
+    { name: 'Konecta', logo: 'assets/images/clients/konecta.png' },
+    { name: 'SAP', logo: 'assets/images/clients/SAPlogo.webp' },
+    { name: 'Knauf', logo: 'assets/images/clients/KNAUFLogo2024sRGB.png' }
   ];
 
   get marqueeClients(): ClientPartner[] {
