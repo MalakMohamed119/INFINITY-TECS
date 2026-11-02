@@ -26,7 +26,7 @@ export class SeoService {
     const keywords = config.keywords || 'Infinity Tecs, Coffee Vending Machines Cairo, VendPlace, Touchless Vending App Egypt, Smart Vending, Espresso Solutions';
     const ogImage = config.ogImage || 'image.png';
 
-    this.titleService.setTitle(title);
+    this.titleService.setTitle('Infinity Tecs');
     
     this.metaService.updateTag({ name: 'description', content: description });
     this.metaService.updateTag({ name: 'keywords', content: keywords });
