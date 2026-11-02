@@ -1,7 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
   <defs>
     <linearGradient id="brand" x1="20" y1="38" x2="80" y2="80" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#00AF9A"/>
+      <stop stop-color="#238FB8"/>
+      <stop offset="0.48" stop-color="#127595"/>
       <stop offset="1" stop-color="#08263F"/>
     </linearGradient>
     <radialGradient id="bean" cx="28%" cy="20%" r="88%">
