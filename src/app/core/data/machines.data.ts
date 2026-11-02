@@ -507,7 +507,7 @@ export const MACHINES_DATA: Machine[] = [
     tagline: 'Fresh Milk Machine - Varitherm induction steam technology',
     shortDescription: 'Varitherm induction steam fresh milk module pairable with laRhea tabletop coffee vendors.',
     fullDescription: 'rhMM1.v+ prepares hot and cold micro-foam fresh milk for cappuccinos and latte macchiatos.',
-    images: ['assets/images/machines/coffee/rhmm1-v-plus.png'],
+    images: ['assets/images/machines/coffee/rhmm1-v-plus.jpg'],
     featured: true,
     badge: 'Available Now',
     specs: [
