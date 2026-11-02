@@ -112,7 +112,11 @@
   padding: 0.5rem;
   background: #fff;
   border-radius: 6px;
-  transform: translate(-6px, -4px);
+  transform: translate(-8px, -6px);
+}
+
+.partner-logo-tile .client-logo-img[src*='amazon.webp'] {
+  transform: scale(0.82);
 }
 
 @media (max-width: 1000px) {
