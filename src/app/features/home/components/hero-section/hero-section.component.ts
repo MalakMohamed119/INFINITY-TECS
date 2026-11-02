@@ -29,7 +29,7 @@ export class HeroSectionComponent implements OnInit, OnDestroy {
       detail: 'Premium fresh coffee system'
     },
     {
-      src: 'assets/images/machines/coffee/laRhea%20V+%20grande%202%20premium.webp',
+      src: 'assets/images/machines/coffee/larhea-v-plus-grande-2-premium.png',
       alt: 'laRhea V+ Grande 2 Premium coffee machine',
       name: 'laRhea V+ Grande 2 Premium',
       detail: 'Dual-grinder touchscreen system'
