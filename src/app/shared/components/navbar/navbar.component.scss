@@ -486,3 +486,6 @@
 .brand-logo .logo-text{align-self:center;justify-content:center;transform:translateY(3px)}
 .brand-logo .brand-name,.brand-logo .brand-sub{line-height:1.15}
 .site-header.scrolled .brand-logo .brand-name{letter-spacing:.025em!important}
+.brand-logo .brand-mark{width:68px;height:68px}
+.brand-logo .logo-text{transform:translateY(7px)}
+@media(max-width:576px){.brand-logo .brand-mark{width:58px;height:58px}}
