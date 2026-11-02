@@ -396,3 +396,9 @@
 /* Bright, readable labels on the dark catalog banner. */
 .page-header-banner .header-badge{color:#FBFCFA}
 .catalog-header-stats .hstat-item .hstat-label{color:#DCE7E5}
+
+@media(max-width:576px){
+  .btn-pro-action{gap:7px;padding:10px 14px;font-size:.82rem;line-height:1.2;white-space:nowrap}
+  .btn-pro-action span{white-space:nowrap}
+  .btn-pro-action svg{width:16px;height:16px;flex:none}
+}
