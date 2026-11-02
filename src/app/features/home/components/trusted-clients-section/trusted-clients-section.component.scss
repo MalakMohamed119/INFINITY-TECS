@@ -81,22 +81,28 @@
 }
 
 .partner-logo-tile .client-logo-img[src*='dallmayr.png'] {
-  transform: scale(1.5);
-}
-
-.partner-logo-tile .client-logo-img[src*='intelcia.png'] {
-  transform: scale(1.45);
+  transform: scale(1.65);
 }
 
 .partner-logo-tile .client-logo-img[src*='the-address.png'],
-.partner-logo-tile .client-logo-img[src*='intelcia.png'],
-.partner-logo-tile .client-logo-img[src*='nestle.png'],
 .partner-logo-tile .client-logo-img[src*='ahram.png'] {
   transform: scale(1.12);
 }
 
+.partner-logo-tile .client-logo-img[src*='intelcia.png'] {
+  transform: scale(1.6);
+}
+
+.partner-logo-tile .client-logo-img[src*='nestle.png'] {
+  transform: scale(1.25);
+}
+
 .partner-logo-tile .client-logo-img[src*='transmar.png'] {
-  transform: scale(1.18);
+  transform: scale(1.38);
+}
+
+.partner-logo-tile .client-logo-img[src*='standard-chartered.png'] {
+  transform: scale(1.25);
 }
 
 .partner-logo-tile .client-logo-img[src*='arqam-capital'] {
