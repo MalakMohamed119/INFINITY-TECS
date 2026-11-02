@@ -14,10 +14,21 @@
         <div><strong>Local after-sales care</strong><span>Service, maintenance and support</span></div>
       </div>
     </div>
-    <div class="hero-product" aria-label="laRhea V+ Grande coffee machine manufactured in Italy">
-
-      <div class="photo-frame"><img src="assets/images/machines/coffee/larhea-v-plus-grande.webp" alt="laRhea V+ Grande bean-to-cup coffee machine" /></div>
-      <div class="product-caption"><strong>laRhea V+ Grande</strong><span>Italian bean-to-cup system</span></div>
+    <div class="hero-product" aria-label="Selected coffee machines manufactured in Italy">
+      <div class="photo-frame">
+        @for (slide of heroSlides; track slide.src; let i = $index) {
+          <img [src]="slide.src" [alt]="slide.alt" [class.is-active]="i === activeSlide" [attr.aria-hidden]="i !== activeSlide" />
+        }
+      </div>
+      <div class="product-caption">
+        <strong>{{ heroSlides[activeSlide].name }}</strong>
+        <span>{{ heroSlides[activeSlide].detail }}</span>
+        <div class="slide-dots" role="group" aria-label="Choose a coffee machine">
+          @for (slide of heroSlides; track slide.src; let i = $index) {
+            <button type="button" [class.is-active]="i === activeSlide" [attr.aria-label]="'Show ' + slide.name" [attr.aria-pressed]="i === activeSlide" (click)="showSlide(i)"></button>
+          }
+        </div>
+      </div>
     </div>
   </div>
 </section>
