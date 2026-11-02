@@ -33,7 +33,7 @@ export const MACHINES_DATA: Machine[] = [
     category: 'coffee',
     subCategory: 'laRhea V+',
     tagline: 'Premium Italian Touchscreen Tabletop Coffee Vendor',
-    shortDescription: 'High-performance Italian tabletop espresso vendor featuring interactive touch interface, variflex brewing technology, and sleek glass finish.',
+    shortDescription: 'High-performance tabletop espresso machine manufactured in Italy, featuring an interactive touch interface, Variflex brewing technology, and a sleek glass finish.',
     fullDescription: 'The laRhea Cino Grande Premium represents the pinnacle of Italian tabletop vending engineering. Combining elegant dark glass aesthetics with Variflex brewing precision and flexible canister configurations, it delivers barista-quality espresso, cappuccinos, and gourmet hot beverages.',
     images: ['assets/images/machines/coffee/Rhea-Vendors-laRhea-CINO-GRANDE-PREMIUM-1-800x800.webp'],
     featured: false,
