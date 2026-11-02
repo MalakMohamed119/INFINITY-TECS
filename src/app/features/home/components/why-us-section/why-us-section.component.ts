@@ -16,7 +16,7 @@ export class WhyUsSectionComponent {
     subtitle: 'Premium equipment with a team in your corner',
     icon: 'shield-check',
     points: [
-      'Carefully selected Italian coffee and vending equipment, chosen for dependable everyday performance.',
+      'Carefully selected Italian-made coffee and vending machines, chosen for dependable everyday performance.',
       'Site assessment, installation and practical handover from experienced local engineers.',
       'Clear recommendations that match the machine to your team, space and service needs.'
     ]

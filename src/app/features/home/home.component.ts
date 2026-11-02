@@ -32,8 +32,8 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
     this.seoService.setSeoData({
-      title: 'Infinity Tecs | Italian Coffee & Vending Solutions',
-      description: 'Premium Italian coffee and vending equipment, thoughtfully installed and supported by a local after-sales and maintenance team in Egypt.'
+      title: 'Infinity Tecs | Italian Coffee Machines & Vending Solutions',
+      description: 'Premium Italian coffee machines and vending equipment, thoughtfully installed and supported by a local after-sales and maintenance team in Egypt.'
     });
   }
 
