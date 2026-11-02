@@ -524,7 +524,7 @@ export const MACHINES_DATA: Machine[] = [
     tagline: 'Dual Fresh Milk Machine - Advanced Varitherm induction steam',
     shortDescription: 'Expanded dual-container fresh milk module with Varitherm induction heating for high-volume cappuccino & latte preparation.',
     fullDescription: 'rhMM2.v+ provides dual fresh milk container capacity, automated steam clean cycles, and precision Varitherm micro-foam extraction for busy coffee hubs.',
-    images: ['assets/images/machines/coffee/rhmm2-v-plus.png'],
+    images: ['assets/images/machines/coffee/rhMM2.v+.jpg'],
     featured: true,
     badge: 'Available Now',
     specs: [
