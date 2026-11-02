@@ -29,7 +29,7 @@ import { CommonModule } from '@angular/common';
       right: 30px;
       width: 58px;
       height: 58px;
-      background: #3f6254;
+      background: #159d94;
       color: #FFF;
       border-radius: var(--radius-full);
       @include flex-center;
@@ -69,7 +69,7 @@ import { CommonModule } from '@angular/common';
       position: absolute;
       inset: -4px;
       border-radius: var(--radius-full);
-      border: 2px solid #81958a;
+      border: 2px solid #79c9c1;
       animation: pulse 2s infinite;
       pointer-events: none;
     }

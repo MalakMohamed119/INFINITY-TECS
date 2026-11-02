@@ -1,7 +1,7 @@
 @use 'mixins' as *;
 
 .category-banner {
-  background: linear-gradient(160deg, #242a27 0%, #242a27 50%, #38453f 100%);
+  background: linear-gradient(160deg, #26394d 0%, #26394d 50%, #40566d 100%);
   padding: var(--spacing-2xl) 0 var(--spacing-xl);
   color: var(--color-cream-light);
   border-bottom: 1px solid var(--color-border-dark);
@@ -29,7 +29,7 @@
     transition: color var(--transition-fast);
 
     &:hover {
-      color: #6b8577;
+      color: #258f87;
     }
   }
 
@@ -41,15 +41,15 @@
   }
 
   .crumb-active {
-    color: #6b8577;
+    color: #258f87;
     font-weight: 700;
   }
 
   .category-badge {
     display: inline-block;
-    background: rgba(63, 98, 84, 0.15);
-    border: 1px solid rgba(63, 98, 84, 0.35);
-    color: #6b8577;
+    background: rgba(21, 157, 148, 0.15);
+    border: 1px solid rgba(21, 157, 148, 0.35);
+    color: #258f87;
     padding: 4px 14px;
     border-radius: var(--radius-full);
     font-size: 0.8rem;
@@ -78,7 +78,7 @@
     gap: 8px;
     background: rgba(129, 149, 138, 0.15);
     border: 1px solid rgba(129, 149, 138, 0.35);
-    color: #81958a;
+    color: #79c9c1;
     padding: 6px 16px;
     border-radius: var(--radius-full);
     font-size: 0.82rem;
@@ -112,15 +112,15 @@
     transition: all var(--transition-fast);
 
     &:hover {
-      border-color: #6b8577;
+      border-color: #258f87;
       color: var(--color-primary-dark);
     }
 
     &.active {
       background: var(--color-primary-dark);
       border-color: var(--color-primary-dark);
-      color: #6b8577;
-      box-shadow: 0 4px 12px rgba(36, 42, 39, 0.15);
+      color: #258f87;
+      box-shadow: 0 4px 12px rgba(38, 57, 77, 0.15);
     }
   }
 }
@@ -154,9 +154,9 @@
     width: 72px;
     height: 72px;
     border-radius: 50%;
-    background: linear-gradient(135deg, rgba(63, 98, 84, 0.15) 0%, rgba(63, 98, 84, 0.05) 100%);
-    border: 1px solid rgba(63, 98, 84, 0.3);
-    color: #6b8577;
+    background: linear-gradient(135deg, rgba(21, 157, 148, 0.15) 0%, rgba(21, 157, 148, 0.05) 100%);
+    border: 1px solid rgba(21, 157, 148, 0.3);
+    color: #258f87;
     @include flex-center;
     margin: 0 auto var(--spacing-md);
   }

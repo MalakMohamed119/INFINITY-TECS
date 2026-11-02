@@ -91,21 +91,21 @@ export interface SelectOption {
       height: 50px;
       padding: 12px 18px;
       background: #FFFFFF;
-      border: 1.5px solid rgba(36, 42, 39, 0.15);
+      border: 1.5px solid rgba(38, 57, 77, 0.15);
       border-radius: 14px;
-      box-shadow: 0 4px 14px rgba(36, 42, 39, 0.04);
+      box-shadow: 0 4px 14px rgba(38, 57, 77, 0.04);
       cursor: pointer;
       outline: none;
       transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
 
       &:hover {
-        border-color: #6b8577;
+        border-color: #258f87;
         box-shadow: 0 6px 20px rgba(63, 98, 84, 0.14);
         transform: translateY(-1px);
       }
 
       .open & {
-        border-color: #6b8577;
+        border-color: #258f87;
         box-shadow: 0 0 0 4px rgba(63, 98, 84, 0.2), 0 8px 24px rgba(63, 98, 84, 0.15);
       }
     }
@@ -114,7 +114,7 @@ export interface SelectOption {
       font-family: var(--font-family-body, inherit);
       font-size: 0.95rem;
       font-weight: 600;
-      color: var(--color-primary-dark, #242a27);
+      color: var(--color-primary-dark, #26394d);
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
@@ -129,7 +129,7 @@ export interface SelectOption {
       display: flex;
       align-items: center;
       justify-content: center;
-      color: #6b8577;
+      color: #258f87;
       transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
       flex-shrink: 0;
 
@@ -145,8 +145,8 @@ export interface SelectOption {
       left: 0;
       right: 0;
       z-index: 1000;
-      background: #f8f9f7;
-      border: 1.5px solid #dde4df;
+      background: #f7f8f7;
+      border: 1.5px solid #dce4e5;
       border-radius: 18px;
       padding: 8px;
       box-shadow: 0 14px 36px rgba(42, 41, 46, 0.16), 0 4px 14px rgba(63, 98, 84, 0.08);
@@ -168,7 +168,7 @@ export interface SelectOption {
         height: 0px;
       }
       &::-webkit-scrollbar-thumb {
-        background: var(--color-accent-primary, #3f6254);
+        background: var(--color-accent-primary, #159d94);
         border-radius: 10px;
       }
     }
@@ -190,13 +190,13 @@ export interface SelectOption {
       }
 
       &:hover {
-        background: #eff2ef;
-        color: #6b8577;
+        background: #eef2f1;
+        color: #258f87;
       }
 
       &.selected {
-        background: #eff2ef;
-        color: #557766;
+        background: #eef2f1;
+        color: #35b5aa;
         font-weight: 700;
         border: 1px solid rgba(85, 119, 102, 0.3);
       }
@@ -215,13 +215,13 @@ export interface SelectOption {
 
     .option-sub {
       font-size: 0.76rem;
-      color: #557766;
+      color: #35b5aa;
       font-weight: 600;
       margin-top: 2px;
     }
 
     .check-icon {
-      stroke: #557766;
+      stroke: #35b5aa;
       flex-shrink: 0;
     }
 

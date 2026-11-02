@@ -8,12 +8,12 @@
 }
 
 .vendplace-card {
-  background: linear-gradient(155deg, #38453f 0%, #242a27 100%);
-  border: 1px solid rgba(63, 98, 84, 0.35);
+  background: linear-gradient(155deg, #40566d 0%, #26394d 100%);
+  border: 1px solid rgba(21, 157, 148, 0.35);
   border-radius: var(--radius-lg);
   padding: 1.75rem;
   color: var(--color-cream-light);
-  box-shadow: 0 16px 40px rgba(36, 42, 39, 0.3);
+  box-shadow: 0 16px 40px rgba(38, 57, 77, 0.3);
   position: relative;
 }
 
@@ -21,7 +21,7 @@
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: rgba(123, 141, 131, 0.15);
+  background: rgba(121, 201, 193, 0.15);
   border: 1px solid var(--color-accent-muted);
   color: var(--color-accent-muted);
   padding: 6px 16px;
@@ -65,7 +65,7 @@ h2 {
 }
 
 .feat-box {
-  background: rgba(36, 42, 39, 0.6);
+  background: rgba(38, 57, 77, 0.6);
   border: 1px solid rgba(255, 255, 255, 0.08);
   padding: var(--spacing-lg);
   border-radius: var(--radius-lg);
@@ -74,7 +74,7 @@ h2 {
   transition: transform var(--transition-fast), border-color var(--transition-fast);
 
   svg {
-    color: #6b8577;
+    color: #258f87;
     margin-bottom: var(--spacing-sm);
   }
 
@@ -93,7 +93,7 @@ h2 {
 
   &:hover {
     transform: translateY(-4px);
-    border-color: #6b8577;
+    border-color: #258f87;
   }
 }
 
@@ -120,7 +120,7 @@ h2 {
 
   &:hover {
     transform: translateY(-2px);
-    box-shadow: 0 0 35px rgba(63, 98, 84, 0.6);
+    box-shadow: 0 0 35px rgba(21, 157, 148, 0.6);
     color: #FFF;
   }
 }
@@ -128,13 +128,13 @@ h2 {
 .portal-url-label {
   font-family: monospace;
   font-size: 0.9rem;
-  color: #6b8577;
-  background: rgba(63, 98, 84, 0.1);
+  color: #258f87;
+  background: rgba(21, 157, 148, 0.1);
   padding: 6px 14px;
   border-radius: var(--radius-sm);
 }
 
 /* Brighten accent details against VendPlace's dark panels. */
-.vendplace-card .card-badge{color:#f8f9f7}
-.vendplace-card .feat-box svg{color:#dce5df}
-.vendplace-card .portal-url-label{color:#dce5df}
+.vendplace-card .card-badge{color:#f7f8f7}
+.vendplace-card .feat-box svg{color:#dce4e5}
+.vendplace-card .portal-url-label{color:#dce4e5}

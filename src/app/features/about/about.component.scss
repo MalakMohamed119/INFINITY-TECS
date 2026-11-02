@@ -11,9 +11,9 @@
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    background: rgba(63, 98, 84, 0.12);
-    color: #6b8577;
-    border: 1px solid rgba(63, 98, 84, 0.3);
+    background: rgba(21, 157, 148, 0.12);
+    color: #258f87;
+    border: 1px solid rgba(21, 157, 148, 0.3);
     padding: 6px 18px;
     border-radius: var(--radius-full);
     font-size: 0.82rem;
@@ -59,7 +59,7 @@
       display: block;
       font-size: 1.8rem;
       font-weight: 800;
-      color: #6b8577;
+      color: #258f87;
       margin-bottom: 4px;
     }
 
@@ -94,7 +94,7 @@
   font-weight: 700;
   letter-spacing: 1.5px;
   text-transform: uppercase;
-  color: #6b8577;
+  color: #258f87;
   margin-bottom: var(--spacing-sm);
 }
 
@@ -121,20 +121,20 @@
 
 .story-highlight-card {
   position: relative;
-  background: linear-gradient(145deg, #38453f 0%, #242a27 100%);
-  border: 1px solid rgba(63, 98, 84, 0.3);
+  background: linear-gradient(145deg, #40566d 0%, #26394d 100%);
+  border: 1px solid rgba(21, 157, 148, 0.3);
   border-radius: var(--radius-xl);
   padding: var(--spacing-2xl);
   color: var(--color-cream-light);
   overflow: hidden;
-  box-shadow: 0 20px 40px rgba(36, 42, 39, 0.25);
+  box-shadow: 0 20px 40px rgba(38, 57, 77, 0.25);
 
   .card-icon {
     width: 60px;
     height: 60px;
     border-radius: var(--radius-md);
-    background: rgba(63, 98, 84, 0.15);
-    color: #6b8577;
+    background: rgba(21, 157, 148, 0.15);
+    color: #258f87;
     @include flex-center;
     margin-bottom: var(--spacing-lg);
   }
@@ -209,7 +209,7 @@
 }
 
 .pillar-box {
-  background: linear-gradient(180deg, #FFFFFF 0%, #f8f9f7 100%);
+  background: linear-gradient(180deg, #FFFFFF 0%, #f7f8f7 100%);
   border: 1.5px solid rgba(226, 232, 240, 0.9);
   border-radius: 32px;
   padding: var(--spacing-2xl);
@@ -225,7 +225,7 @@
     left: 0;
     right: 0;
     height: 6px;
-    background: linear-gradient(90deg, #3f6254 0%, #557766 100%);
+    background: linear-gradient(90deg, #159d94 0%, #35b5aa 100%);
     border-radius: 32px 32px 0 0;
   }
 
@@ -236,14 +236,14 @@
     left: 0;
     right: 0;
     height: 6px;
-    background: linear-gradient(90deg, #81958a 0%, #557766 100%);
+    background: linear-gradient(90deg, #79c9c1 0%, #35b5aa 100%);
     border-radius: 32px 32px 0 0;
   }
 
   &:hover {
     transform: translateY(-8px);
     box-shadow: 0 24px 48px rgba(42, 41, 46, 0.12);
-    border-color: rgba(63, 98, 84, 0.35);
+    border-color: rgba(21, 157, 148, 0.35);
 
     .pillar-icon {
       transform: scale(1.08) rotate(-4deg);
@@ -262,14 +262,14 @@
     font-weight: 800;
     letter-spacing: 1.2px;
     text-transform: uppercase;
-    color: #6b8577;
-    background: rgba(63, 98, 84, 0.1);
-    border: 1px solid rgba(63, 98, 84, 0.2);
+    color: #258f87;
+    background: rgba(21, 157, 148, 0.1);
+    border: 1px solid rgba(21, 157, 148, 0.2);
     padding: 5px 14px;
     border-radius: var(--radius-full);
 
     &.green {
-      color: #81958a;
+      color: #79c9c1;
       background: rgba(129, 149, 138, 0.1);
       border-color: rgba(129, 149, 138, 0.2);
     }
@@ -279,17 +279,17 @@
     width: 52px;
     height: 52px;
     border-radius: var(--radius-lg);
-    background: linear-gradient(135deg, rgba(63, 98, 84, 0.15) 0%, rgba(63, 98, 84, 0.05) 100%);
-    border: 1px solid rgba(63, 98, 84, 0.25);
-    color: #6b8577;
+    background: linear-gradient(135deg, rgba(21, 157, 148, 0.15) 0%, rgba(21, 157, 148, 0.05) 100%);
+    border: 1px solid rgba(21, 157, 148, 0.25);
+    color: #258f87;
     @include flex-center;
-    box-shadow: 0 6px 16px rgba(63, 98, 84, 0.15);
+    box-shadow: 0 6px 16px rgba(21, 157, 148, 0.15);
     transition: transform var(--transition-normal);
 
     &.green-bg {
       background: linear-gradient(135deg, rgba(129, 149, 138, 0.15) 0%, rgba(129, 149, 138, 0.05) 100%);
       border-color: rgba(129, 149, 138, 0.25);
-      color: #81958a;
+      color: #79c9c1;
       box-shadow: 0 6px 16px rgba(129, 149, 138, 0.15);
     }
   }
@@ -333,7 +333,7 @@
 
       &:hover {
         transform: translateX(4px);
-        border-color: rgba(63, 98, 84, 0.3);
+        border-color: rgba(21, 157, 148, 0.3);
         box-shadow: 0 6px 16px rgba(42, 41, 46, 0.05);
       }
 
@@ -342,14 +342,14 @@
         height: 22px;
         padding: 2px;
         border-radius: var(--radius-full);
-        background: rgba(63, 98, 84, 0.12);
-        color: #6b8577;
+        background: rgba(21, 157, 148, 0.12);
+        color: #258f87;
         flex-shrink: 0;
         margin-top: 2px;
 
         &.green {
           background: rgba(129, 149, 138, 0.12);
-          color: #81958a;
+          color: #79c9c1;
         }
       }
     }
@@ -363,15 +363,15 @@
 }
 
 .crm-card {
-  background: linear-gradient(135deg, rgba(63, 98, 84, 0.1) 0%, rgba(129, 149, 138, 0.06) 100%);
-  border: 1.5px solid rgba(63, 98, 84, 0.35);
+  background: linear-gradient(135deg, rgba(21, 157, 148, 0.1) 0%, rgba(129, 149, 138, 0.06) 100%);
+  border: 1.5px solid rgba(21, 157, 148, 0.35);
   border-radius: 36px;
   padding: var(--spacing-3xl) var(--spacing-2xl);
 
   .crm-badge {
     display: inline-block;
     background: rgba(129, 149, 138, 0.15);
-    color: #81958a;
+    color: #79c9c1;
     border: 1px solid rgba(129, 149, 138, 0.3);
     padding: 4px 14px;
     border-radius: var(--radius-full);
@@ -415,7 +415,7 @@
     gap: 14px;
 
     svg {
-      color: #6b8577;
+      color: #258f87;
       flex-shrink: 0;
       margin-top: 2px;
     }
@@ -439,7 +439,7 @@
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  background: linear-gradient(135deg, #81958a 0%, #557766 100%);
+  background: linear-gradient(135deg, #79c9c1 0%, #35b5aa 100%);
   color: #FFF;
   padding: 14px 28px;
   border-radius: var(--radius-full);
@@ -459,12 +459,12 @@
 
 
 /* Lighter type and clear contrast for the company metrics banner. */
-.about-banner .banner-badge{color:#b8c8bf;border-color:rgba(184,200,191,.24);font-weight:500}
+.about-banner .banner-badge{color:#c6d0d4;border-color:rgba(184,200,191,.24);font-weight:500}
 .about-banner h1{font-weight:600}
-.metrics-grid .metric-num{color:#a9beb2;font-weight:600;font-size:1.7rem}
-.metrics-grid .metric-lbl{color:#d3dbd6;font-weight:500;letter-spacing:.035em}
+.metrics-grid .metric-num{color:#a9bdc4;font-weight:600;font-size:1.7rem}
+.metrics-grid .metric-lbl{color:#dce4e5;font-weight:500;letter-spacing:.035em}
 .story-text h2{font-weight:600}
 .about-banner .banner-badge,.metrics-grid .metric-lbl{font-weight:500!important}
 .metrics-grid .metric-num{font-weight:600!important}
-.story-highlight-card .card-icon{color:#f8f9f7;background:rgba(248,249,247,.13);border:1px solid rgba(248,249,247,.16)}
+.story-highlight-card .card-icon{color:#f7f8f7;background:rgba(248,249,247,.13);border:1px solid rgba(248,249,247,.16)}
 .story-highlight-card .card-icon svg{stroke:currentColor}

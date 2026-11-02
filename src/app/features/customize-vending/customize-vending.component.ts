@@ -36,48 +36,48 @@ export class CustomizeVendingComponent implements OnInit {
 
   // Custom Color Selection
   selectedColorId = 'forest';
-  customHexColor = '#3f6254';
+  customHexColor = '#159d94';
 
   colorPresets: ColorPreset[] = [
     {
       id: 'forest',
       name: 'Forest',
-      bodyBg: 'linear-gradient(145deg, #242a27 0%, #38453f 50%, #3f6254 100%)',
-      accentColor: '#3f6254',
+      bodyBg: 'linear-gradient(145deg, #26394d 0%, #40566d 50%, #159d94 100%)',
+      accentColor: '#159d94',
       glowColor: 'rgba(63, 98, 84, 0.35)',
-      borderColor: '#3f6254'
+      borderColor: '#159d94'
     },
     {
       id: 'black',
       name: 'Stealth Black',
-      bodyBg: 'linear-gradient(145deg, #111111 0%, #1A1A1A 50%, #8c9f94 100%)',
-      accentColor: '#8c9f94',
+      bodyBg: 'linear-gradient(145deg, #111111 0%, #1A1A1A 50%, #79c9c1 100%)',
+      accentColor: '#79c9c1',
       glowColor: 'rgba(129, 149, 138, 0.35)',
-      borderColor: '#8c9f94'
+      borderColor: '#79c9c1'
     },
     {
       id: 'white',
       name: 'Medical Pure White',
-      bodyBg: 'linear-gradient(145deg, #dde4df 0%, #f8f9f7 50%, #81958a 100%)',
-      accentColor: '#81958a',
+      bodyBg: 'linear-gradient(145deg, #dce4e5 0%, #f7f8f7 50%, #79c9c1 100%)',
+      accentColor: '#79c9c1',
       glowColor: 'rgba(129, 149, 138, 0.35)',
-      borderColor: '#81958a'
+      borderColor: '#79c9c1'
     },
     {
       id: 'sage',
       name: 'Soft Sage',
-      bodyBg: 'linear-gradient(145deg, #24312b 0%, #355348 50%, #81958a 100%)',
-      accentColor: '#81958a',
+      bodyBg: 'linear-gradient(145deg, #24312b 0%, #355348 50%, #79c9c1 100%)',
+      accentColor: '#79c9c1',
       glowColor: 'rgba(129, 149, 138, 0.35)',
-      borderColor: '#81958a'
+      borderColor: '#79c9c1'
     },
     {
       id: 'custom',
       name: 'Custom Brand Color',
-      bodyBg: 'linear-gradient(145deg, #242a27 0%, #38453f 100%)',
-      accentColor: '#3f6254',
+      bodyBg: 'linear-gradient(145deg, #26394d 0%, #40566d 100%)',
+      accentColor: '#159d94',
       glowColor: 'rgba(63, 98, 84, 0.35)',
-      borderColor: '#3f6254'
+      borderColor: '#159d94'
     }
   ];
 
@@ -155,7 +155,7 @@ export class CustomizeVendingComponent implements OnInit {
       return {
         id: 'custom',
         name: 'Custom Brand Color',
-        bodyBg: `linear-gradient(145deg, #242a27 0%, #38453f 50%, ${this.customHexColor} 100%)`,
+        bodyBg: `linear-gradient(145deg, #26394d 0%, #40566d 50%, ${this.customHexColor} 100%)`,
         accentColor: this.customHexColor,
         glowColor: `${this.customHexColor}66`,
         borderColor: this.customHexColor

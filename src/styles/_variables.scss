@@ -1,50 +1,50 @@
-/* ==========================================================================
+/* ========================================================================== 
    Design Tokens & CSS Custom Properties for Infinity Tecs
-   Refreshed palette: graphite, forest green and stone
+   VendPlace inspired palette: slate blue, turquoise and soft white
    ========================================================================== */
 
 :root {
-  /* Brand palette: graphite, forest green and stone */
-  --color-primary-dark: #242a27;
-  --color-primary-mid: #38453f;
-  --color-primary-light: #52665c;
-  
-  --color-cream-light: #f8f9f7;
-  --color-cream-mid: #eff2ef;
-  --color-cream-dark: #e1e7e2;
+  /* Brand palette sampled from the VendPlace mark */
+  --color-primary-dark: #26394d;
+  --color-primary-mid: #40566d;
+  --color-primary-light: #657b8f;
 
-  --color-accent-primary: #3f6254;
-  --color-accent-secondary: #557766;
-  --color-accent-muted: #81958a;
-  --color-accent-hover: #304c3f;
+  --color-cream-light: #f7f8f7;
+  --color-cream-mid: #eef2f1;
+  --color-cream-dark: #dfe7e6;
 
-  --color-surface-dark: #242a27;
-  --color-surface-card: #FFFFFF;        /* Card Background Light */
-  --color-surface-card-dark: #38453f;
-  
-  --color-text-main: #2e3430;
-  --color-text-light: #f8f9f7;          /* Light Text on Dark BG */
-  --color-text-muted: #707873;
-  --color-text-muted-dark: #c4cdc7;
+  --color-accent-primary: #159d94;
+  --color-accent-secondary: #35b5aa;
+  --color-accent-muted: #79c9c1;
+  --color-accent-hover: #117b75;
 
-  --color-border: #dde4df;
-  --color-border-dark: #515d56;
+  --color-surface-dark: #26394d;
+  --color-surface-card: #ffffff;
+  --color-surface-card-dark: #40566d;
 
-  --color-success: #7b8d83;
-  --color-info: #3f6254;
+  --color-text-main: #2d3d4c;
+  --color-text-light: #f7f8f7;
+  --color-text-muted: #707d86;
+  --color-text-muted-dark: #c6d0d4;
+
+  --color-border: #dce4e5;
+  --color-border-dark: #526777;
+
+  --color-success: #35a99e;
+  --color-info: #159d94;
 
   /* Typography */
   --font-family-heading: 'DM Sans', 'Avenir Next', Arial, sans-serif;
   --font-family-body: 'DM Sans', 'Avenir Next', Arial, sans-serif;
 
   /* Spacing */
-  --spacing-xs: 0.25rem;  /* 4px */
-  --spacing-sm: 0.5rem;   /* 8px */
-  --spacing-md: 0.75rem;  /* 12px */
-  --spacing-lg: 1.1rem;   /* 17.6px */
-  --spacing-xl: 1.5rem;   /* 24px */
-  --spacing-2xl: 2.25rem; /* 36px */
-  --spacing-3xl: 3rem;    /* 48px */
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 0.75rem;
+  --spacing-lg: 1.1rem;
+  --spacing-xl: 1.5rem;
+  --spacing-2xl: 2.25rem;
+  --spacing-3xl: 3rem;
 
   /* Border Radius */
   --radius-sm: 8px;
@@ -54,12 +54,12 @@
   --radius-full: 9999px;
 
   /* Elevation Shadows */
-  --shadow-sm: 0 2px 8px rgba(36, 42, 39, 0.06);
-  --shadow-md: 0 8px 24px rgba(36, 42, 39, 0.12);
-  --shadow-lg: 0 16px 40px rgba(36, 42, 39, 0.18);
-  --shadow-glow: 0 0 30px rgba(63, 98, 84, 0.35);
-  --shadow-accent-glow: 0 0 25px rgba(123, 141, 131, 0.4);
-  --shadow-dark: 0 20px 45px rgba(0, 0, 0, 0.5);
+  --shadow-sm: 0 2px 8px rgba(38, 57, 77, 0.06);
+  --shadow-md: 0 8px 24px rgba(38, 57, 77, 0.12);
+  --shadow-lg: 0 16px 40px rgba(38, 57, 77, 0.18);
+  --shadow-glow: 0 0 30px rgba(21, 157, 148, 0.3);
+  --shadow-accent-glow: 0 0 25px rgba(121, 201, 193, 0.35);
+  --shadow-dark: 0 20px 45px rgba(20, 34, 48, 0.42);
 
   /* Transitions */
   --transition-fast: 0.2s cubic-bezier(0.16, 1, 0.3, 1);

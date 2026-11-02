@@ -1,7 +1,7 @@
 @use 'mixins' as *;
 
 .page-header-banner {
-  background: linear-gradient(150deg, #242a27 0%, #242a27 50%, #38453f 100%);
+  background: linear-gradient(150deg, #26394d 0%, #26394d 50%, #40566d 100%);
   padding: 3.5rem 0 3rem;
   text-align: center;
   position: relative;
@@ -15,7 +15,7 @@
     transform: translateX(-50%);
     width: 600px;
     height: 400px;
-    background: radial-gradient(circle, rgba(63, 98, 84, 0.18) 0%, rgba(0, 0, 0, 0) 70%);
+    background: radial-gradient(circle, rgba(21, 157, 148, 0.18) 0%, rgba(0, 0, 0, 0) 70%);
     pointer-events: none;
   }
 
@@ -28,9 +28,9 @@
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    background: rgba(63, 98, 84, 0.12);
-    color: #6b8577;
-    border: 1px solid rgba(63, 98, 84, 0.3);
+    background: rgba(21, 157, 148, 0.12);
+    color: #258f87;
+    border: 1px solid rgba(21, 157, 148, 0.3);
     padding: 6px 18px;
     border-radius: 30px;
     font-size: 0.8rem;
@@ -62,7 +62,7 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  background: rgba(36, 42, 39, 0.6);
+  background: rgba(38, 57, 77, 0.6);
   backdrop-filter: blur(12px);
   border: 1px solid rgba(255, 255, 255, 0.1);
   padding: 14px 28px;
@@ -82,7 +82,7 @@
     }
 
     .hstat-label {
-      color: #6b8577;
+      color: #258f87;
       font-size: 0.78rem;
       font-weight: 600;
       text-transform: uppercase;
@@ -126,8 +126,8 @@
 
   &:hover {
     transform: translateY(-8px);
-    box-shadow: 0 24px 48px rgba(36, 42, 39, 0.14), 0 0 30px rgba(63, 98, 84, 0.22);
-    border-color: rgba(63, 98, 84, 0.5);
+    box-shadow: 0 24px 48px rgba(38, 57, 77, 0.14), 0 0 30px rgba(21, 157, 148, 0.22);
+    border-color: rgba(21, 157, 148, 0.5);
 
     .pro-card-header {
       .header-glow {
@@ -137,22 +137,22 @@
 
       .header-icon-box {
         transform: scale(1.08) translateY(-2px);
-        background: linear-gradient(135deg, #3f6254 0%, #3f6254 100%);
+        background: linear-gradient(135deg, #159d94 0%, #159d94 100%);
         color: #FFFFFF;
-        box-shadow: 0 10px 25px rgba(63, 98, 84, 0.45);
-        border-color: #304c3f;
+        box-shadow: 0 10px 25px rgba(21, 157, 148, 0.45);
+        border-color: #117b75;
       }
 
       .count-badge {
         border-color: rgba(0, 229, 255, 0.6);
-        background: linear-gradient(135deg, rgba(63, 98, 84, 0.3) 0%, rgba(63, 98, 84, 0.45) 100%);
+        background: linear-gradient(135deg, rgba(21, 157, 148, 0.3) 0%, rgba(21, 157, 148, 0.45) 100%);
       }
     }
 
     .btn-pro-action {
       background: linear-gradient(135deg, var(--color-accent-primary) 0%, var(--color-accent-secondary) 100%);
       color: #FFFFFF;
-      box-shadow: 0 8px 24px rgba(63, 98, 84, 0.35);
+      box-shadow: 0 8px 24px rgba(21, 157, 148, 0.35);
 
       svg {
         transform: translateX(6px);
@@ -163,12 +163,12 @@
 
 .pro-card-header {
   position: relative;
-  background: linear-gradient(145deg, #242a27 0%, #38453f 60%, #38453f 100%);
+  background: linear-gradient(145deg, #26394d 0%, #40566d 60%, #40566d 100%);
   padding: 1.85rem 2rem 1.6rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid rgba(63, 98, 84, 0.18);
+  border-bottom: 1px solid rgba(21, 157, 148, 0.18);
   overflow: hidden;
 
   .header-glow {
@@ -177,7 +177,7 @@
     left: -20px;
     width: 170px;
     height: 170px;
-    background: radial-gradient(circle, rgba(63, 98, 84, 0.28) 0%, rgba(63, 98, 84, 0) 70%);
+    background: radial-gradient(circle, rgba(21, 157, 148, 0.28) 0%, rgba(21, 157, 148, 0) 70%);
     border-radius: 50%;
     pointer-events: none;
     transition: transform 0.5s ease, opacity 0.5s ease;
@@ -189,10 +189,10 @@
     width: 64px;
     height: 64px;
     border-radius: 16px;
-    background: linear-gradient(135deg, rgba(63, 98, 84, 0.2) 0%, rgba(63, 98, 84, 0.35) 100%);
-    border: 1px solid rgba(63, 98, 84, 0.45);
-    color: #304c3f;
-    box-shadow: 0 8px 24px rgba(63, 98, 84, 0.22), inset 0 1px 1px rgba(255, 255, 255, 0.25);
+    background: linear-gradient(135deg, rgba(21, 157, 148, 0.2) 0%, rgba(21, 157, 148, 0.35) 100%);
+    border: 1px solid rgba(21, 157, 148, 0.45);
+    color: #117b75;
+    box-shadow: 0 8px 24px rgba(21, 157, 148, 0.22), inset 0 1px 1px rgba(255, 255, 255, 0.25);
     backdrop-filter: blur(8px);
     @include flex-center;
     transition: all 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
@@ -210,14 +210,14 @@
       display: inline-flex;
       align-items: center;
       gap: 7px;
-      background: linear-gradient(135deg, rgba(63, 98, 84, 0.22) 0%, rgba(63, 98, 84, 0.32) 100%);
+      background: linear-gradient(135deg, rgba(21, 157, 148, 0.22) 0%, rgba(21, 157, 148, 0.32) 100%);
       color: #FFFFFF;
       padding: 5px 14px;
       border-radius: 20px;
       font-size: 0.82rem;
       font-weight: 800;
       letter-spacing: 0.03em;
-      border: 1px solid rgba(63, 98, 84, 0.45);
+      border: 1px solid rgba(21, 157, 148, 0.45);
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
       transition: all 0.3s ease;
 
@@ -225,8 +225,8 @@
         width: 6px;
         height: 6px;
         border-radius: 50%;
-        background: #304c3f;
-        box-shadow: 0 0 8px #304c3f;
+        background: #117b75;
+        box-shadow: 0 0 8px #117b75;
       }
     }
 
@@ -245,7 +245,7 @@
       backdrop-filter: blur(4px);
 
       svg {
-        color: #304c3f;
+        color: #117b75;
       }
     }
   }
@@ -293,7 +293,7 @@
     color: var(--color-primary-dark);
 
     svg {
-      color: #81958a;
+      color: #79c9c1;
       flex-shrink: 0;
     }
   }
@@ -365,7 +365,7 @@
     width: 48px;
     height: 48px;
     border-radius: 14px;
-    background: rgba(63, 98, 84, 0.1);
+    background: rgba(21, 157, 148, 0.1);
     color: var(--color-accent-secondary);
     @include flex-center;
     margin-bottom: 1rem;
@@ -389,10 +389,10 @@
 
 
 /* Raise category icons above the dark card header for clear contrast. */
-.pro-card-header .header-icon-box{color:#e6eee9;background:rgba(230,238,233,.12);border-color:rgba(230,238,233,.32);box-shadow:0 8px 22px rgba(0,0,0,.12),inset 0 1px 1px rgba(255,255,255,.12)}
+.pro-card-header .header-icon-box{color:#eef2f1;background:rgba(230,238,233,.12);border-color:rgba(230,238,233,.32);box-shadow:0 8px 22px rgba(0,0,0,.12),inset 0 1px 1px rgba(255,255,255,.12)}
 .pro-card-header .header-icon-box svg{stroke:currentColor}
 .pro-cat-card:hover .pro-card-header .header-icon-box{color:#fff;background:rgba(230,238,233,.18);border-color:rgba(230,238,233,.48)}
 
 /* Bright, readable labels on the dark catalog banner. */
-.page-header-banner .header-badge{color:#f8f9f7}
-.catalog-header-stats .hstat-item .hstat-label{color:#dce5df}
+.page-header-banner .header-badge{color:#f7f8f7}
+.catalog-header-stats .hstat-item .hstat-label{color:#dce4e5}
