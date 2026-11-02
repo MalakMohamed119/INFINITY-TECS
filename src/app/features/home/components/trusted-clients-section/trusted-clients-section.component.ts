@@ -34,7 +34,8 @@ export class TrustedClientsSectionComponent {
     { name: 'Arqam Capital', logo: 'assets/images/clients/arqam-capital.png' },
     { name: 'Konecta', logo: 'assets/images/clients/konecta.png' },
     { name: 'SAP', logo: 'assets/images/clients/SAPlogo.webp' },
-    { name: 'Knauf', logo: 'assets/images/clients/KNAUFLogo2024sRGB.png' }
+    { name: 'Knauf', logo: 'assets/images/clients/KNAUFLogo2024sRGB.png' },
+    { name: 'UTOPIA Pharma', logo: 'assets/images/clients/Utopia logo-01.png' }
   ];
 
   get marqueeClients(): ClientPartner[] {
