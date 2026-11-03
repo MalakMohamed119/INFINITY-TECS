@@ -19,6 +19,10 @@ export const routes: Routes = [
         loadChildren: () => import('./features/customize-vending/customize-vending.routes').then(m => m.CUSTOMIZE_VENDING_ROUTES)
       },
       {
+        path: 'sales-leasing',
+        loadChildren: () => import('./features/sales-leasing/sales-leasing.routes').then(m => m.SALES_LEASING_ROUTES)
+      },
+      {
         path: 'industrial-automation',
         redirectTo: ''
       },
