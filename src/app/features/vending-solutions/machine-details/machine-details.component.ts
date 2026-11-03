@@ -33,7 +33,7 @@ export class MachineDetailsComponent implements OnInit {
         if (machine) {
           this.selectedImage = machine.images[0] || this.fallbackSvg;
           this.seoService.setSeoData({
-            title: `${machine.name} Specifications | Infinity Tecs`,
+            title: `${machine.name} Specifications | INFINITY TECS`,
             description: machine.shortDescription
           });
         }

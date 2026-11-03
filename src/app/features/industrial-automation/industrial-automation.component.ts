@@ -46,8 +46,8 @@ export class IndustrialAutomationComponent implements OnInit {
 
   ngOnInit(): void {
     this.seoService.setSeoData({
-      title: 'Industrial Automation | Infinity Tecs',
-      description: 'Infinity Tecs provides PLC programming, SCADA integration, utilities control, and water treatment automation systems in Cairo, Egypt.'
+      title: 'Industrial Automation | INFINITY TECS',
+      description: 'INFINITY TECS provides PLC programming, SCADA integration, utilities control, and water treatment automation systems in Cairo, Egypt.'
     });
   }
 

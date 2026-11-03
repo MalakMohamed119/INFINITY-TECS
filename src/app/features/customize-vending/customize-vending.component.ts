@@ -27,7 +27,7 @@ export interface ColorPreset {
 export class CustomizeVendingComponent implements OnInit {
   private seoService = inject(SeoService);
 
-  // Standard Equipment Built-In on All Infinity Tecs Machines
+  // Standard Equipment Built-In on All INFINITY TECS Machines
   readonly isTouchscreenStandard = true; // 32" HD Touchscreen built-in
   readonly isPOSCashlessStandard = true; // POS Card Terminal & App Built-in (NO CASH)
 
@@ -107,7 +107,7 @@ export class CustomizeVendingComponent implements OnInit {
 
   ngOnInit(): void {
     this.seoService.setSeoData({
-      title: 'Customize Your Vending Machine | Infinity Tecs',
+      title: 'Customize Your Vending Machine | INFINITY TECS',
       description: 'Design and customize touchless commercial vending machines with POS payment terminals, custom vinyl wraps, temperature chillers, and elevator drop systems.'
     });
   }

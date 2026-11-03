@@ -224,7 +224,7 @@ export const MACHINES_DATA: Machine[] = [
     tagline: 'Varitherm induction heater & variflex precision brewing',
     shortDescription: 'Top-tier rhTT tabletop espresso machine with Varitherm induction heater technology and 7" touch UI.',
     fullDescription: 'Equipped with Varitherm real-time temperature control and Variflex coffee brewer.',
-    images: ['assets/images/machines/coffee/rhtt1-v-plus.png'],
+    images: ['assets/images/machines/coffee/Rhea-Vendors-Group-rhTT1-4-800x800.jpg'],
     featured: true,
     badge: 'Available Now',
     specs: [

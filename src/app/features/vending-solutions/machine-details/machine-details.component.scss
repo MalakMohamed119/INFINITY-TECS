@@ -6,6 +6,19 @@
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
+.main-img[src*="Rhea-Vendors-Group-rhTT1-4"] {
+  transform: scale(1.4) translateY(40px);
+}
+
+.main-img[src*="rhea-bl-doppio-cup"] {
+  transform: translateY(16px);
+}
+
+.main-img[src*="rhmm1-v-plus"] {
+  transform: scale(1.22) translateY(34px);
+}
+
+
 .breadcrumb-nav {
   display: flex;
   align-items: center;

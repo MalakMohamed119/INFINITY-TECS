@@ -27,7 +27,7 @@ export class VendingSolutionsComponent implements OnInit {
 
   ngOnInit(): void {
     this.seoService.setSeoData({
-      title: 'Vending Solutions | Infinity Tecs',
+      title: 'Vending Solutions | INFINITY TECS',
       description: 'Explore bean-to-cup coffee machines and snack vending equipment categories.'
     });
 

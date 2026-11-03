@@ -31,7 +31,7 @@ export class ContactService {
     console.log('Contact form submitted:', data);
     return of({
       success: true,
-      message: 'Thank you for reaching out to Infinity Tecs! Our Cairo team will contact you shortly.'
+      message: 'Thank you for reaching out to INFINITY TECS! Our Cairo team will contact you shortly.'
     }).pipe(delay(800));
   }
 

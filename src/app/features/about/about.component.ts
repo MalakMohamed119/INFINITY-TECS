@@ -18,8 +18,8 @@ export class AboutComponent implements OnInit {
 
   ngOnInit(): void {
     this.seoService.setSeoData({
-      title: 'About Us | Infinity Tecs',
-      description: 'Learn about Infinity Tecs, Cairo premier coffee vending operator and mobile touchless vending technology leader in Egypt.'
+      title: 'About Us | INFINITY TECS',
+      description: 'Learn about INFINITY TECS, Cairo premier coffee vending operator and mobile touchless vending technology leader in Egypt.'
     });
   }
 

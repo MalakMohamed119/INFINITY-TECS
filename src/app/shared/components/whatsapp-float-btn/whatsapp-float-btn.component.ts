@@ -11,7 +11,7 @@ import { CommonModule } from '@angular/common';
       target="_blank" 
       rel="noopener noreferrer"
       class="whatsapp-float"
-      title="Chat with Infinity Tecs on WhatsApp"
+      title="Chat with INFINITY TECS on WhatsApp"
     >
       <div class="pulse-ring"></div>
       <svg class="whatsapp-icon" width="30" height="30" viewBox="0 0 24 24" fill="currentColor">
@@ -98,8 +98,8 @@ import { CommonModule } from '@angular/common';
   `]
 })
 export class WhatsappFloatBtnComponent {
-  @Input() phoneNumber: string = '201552443399'; // Infinity Tecs WhatsApp line
-  @Input() defaultMessage: string = 'Hello Infinity Tecs, I would like to inquire about your vending machines and solutions.';
+  @Input() phoneNumber: string = '201552443399'; // INFINITY TECS WhatsApp line
+  @Input() defaultMessage: string = 'Hello INFINITY TECS, I would like to inquire about your vending machines and solutions.';
 
   get whatsappUrl(): string {
     return `https://wa.me/${this.phoneNumber}?text=${encodeURIComponent(this.defaultMessage)}`;

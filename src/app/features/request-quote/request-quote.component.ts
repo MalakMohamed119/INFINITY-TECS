@@ -38,7 +38,7 @@ export class RequestQuoteComponent implements OnInit {
 
   get machineOptions(): SelectOption[] {
     const options: SelectOption[] = [
-      { value: '', label: '-- Let Infinity Tecs Recommend --' }
+      { value: '', label: '-- Let INFINITY TECS Recommend --' }
     ];
     this.allMachines.forEach(m => {
       options.push({
@@ -78,8 +78,8 @@ export class RequestQuoteComponent implements OnInit {
 
   ngOnInit(): void {
     this.seoService.setSeoData({
-      title: 'Request a Quote | Infinity Tecs',
-      description: 'Request a detailed equipment or commercial vending proposal from Infinity Tecs in Cairo, Egypt.'
+      title: 'Request a Quote | INFINITY TECS',
+      description: 'Request a detailed equipment or commercial vending proposal from INFINITY TECS in Cairo, Egypt.'
     });
 
     this.productsService.getAllMachines().subscribe(machines => {

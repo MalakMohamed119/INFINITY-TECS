@@ -51,8 +51,8 @@ export class ContactComponent implements OnInit {
       this.formData.subject = requestedSubject!;
     }
     this.seoService.setSeoData({
-      title: 'Contact Us | Infinity Tecs',
-      description: 'Get in touch with Infinity Tecs sales and technical engineers in Cairo, Egypt.'
+      title: 'Contact Us | INFINITY TECS',
+      description: 'Get in touch with INFINITY TECS sales and technical engineers in Cairo, Egypt.'
     });
   }
 

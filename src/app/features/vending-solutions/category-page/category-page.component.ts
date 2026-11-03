@@ -42,7 +42,7 @@ export class CategoryPageComponent implements OnInit {
 
     if (this.categoryInfo) {
       this.seoService.setSeoData({
-        title: `${this.categoryInfo.title} | Infinity Tecs Catalog`,
+        title: `${this.categoryInfo.title} | INFINITY TECS Catalog`,
         description: this.categoryInfo.description
       });
     }
